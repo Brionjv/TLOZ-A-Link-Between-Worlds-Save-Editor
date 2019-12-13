@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TLOZ-A-Link-Between-Worlds-Save-Editor", "TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor.vbproj", "{8A74C1BC-2C30-4A16-9431-8C1F1C6FC4CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A74C1BC-2C30-4A16-9431-8C1F1C6FC4CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A74C1BC-2C30-4A16-9431-8C1F1C6FC4CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A74C1BC-2C30-4A16-9431-8C1F1C6FC4CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A74C1BC-2C30-4A16-9431-8C1F1C6FC4CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92EF9A73-F96E-4E92-828E-339323D5E978}
+	EndGlobalSection
+EndGlobal
