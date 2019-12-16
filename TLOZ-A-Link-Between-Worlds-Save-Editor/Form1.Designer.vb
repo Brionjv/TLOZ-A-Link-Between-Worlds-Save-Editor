@@ -48,12 +48,12 @@ Partial Class Form1
         Me.Closebutton = New System.Windows.Forms.PictureBox()
         Me.Text_datacrc32_z1 = New System.Windows.Forms.TextBox()
         Me.Text_crc32_z1 = New System.Windows.Forms.TextBox()
-        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown3 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_ruppe = New System.Windows.Forms.NumericUpDown()
+        Me.valu_lostmaiamai = New System.Windows.Forms.NumericUpDown()
+        Me.valu_monstertail = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown4 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown5 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown6 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_monstergust = New System.Windows.Forms.NumericUpDown()
+        Me.valu_monsterhorn = New System.Windows.Forms.NumericUpDown()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Text_crc32_z1reflet = New System.Windows.Forms.TextBox()
@@ -262,12 +262,12 @@ Partial Class Form1
         CType(Me.Minimizebutton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TLSE_title, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_ruppe, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_lostmaiamai, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_monstertail, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_monstergust, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_monsterhorn, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Menu_panel.SuspendLayout()
         CType(Me.Icon_description, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_done.SuspendLayout()
@@ -732,34 +732,34 @@ Partial Class Form1
         Me.Text_crc32_z1.TabIndex = 302
         Me.Text_crc32_z1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown1
+        'valu_ruppe
         '
-        Me.NumericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown1.Location = New System.Drawing.Point(83, 73)
-        Me.NumericUpDown1.Maximum = New Decimal(New Integer() {9999, 0, 0, 0})
-        Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(74, 16)
-        Me.NumericUpDown1.TabIndex = 304
-        Me.NumericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_ruppe.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_ruppe.Location = New System.Drawing.Point(83, 73)
+        Me.valu_ruppe.Maximum = New Decimal(New Integer() {9999, 0, 0, 0})
+        Me.valu_ruppe.Name = "valu_ruppe"
+        Me.valu_ruppe.Size = New System.Drawing.Size(74, 16)
+        Me.valu_ruppe.TabIndex = 304
+        Me.valu_ruppe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown2
+        'valu_lostmaiamai
         '
-        Me.NumericUpDown2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown2.Location = New System.Drawing.Point(220, 73)
-        Me.NumericUpDown2.Name = "NumericUpDown2"
-        Me.NumericUpDown2.Size = New System.Drawing.Size(52, 16)
-        Me.NumericUpDown2.TabIndex = 305
-        Me.NumericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_lostmaiamai.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_lostmaiamai.Location = New System.Drawing.Point(220, 73)
+        Me.valu_lostmaiamai.Name = "valu_lostmaiamai"
+        Me.valu_lostmaiamai.Size = New System.Drawing.Size(52, 16)
+        Me.valu_lostmaiamai.TabIndex = 305
+        Me.valu_lostmaiamai.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown3
+        'valu_monstertail
         '
-        Me.NumericUpDown3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown3.Location = New System.Drawing.Point(334, 73)
-        Me.NumericUpDown3.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.NumericUpDown3.Name = "NumericUpDown3"
-        Me.NumericUpDown3.Size = New System.Drawing.Size(52, 16)
-        Me.NumericUpDown3.TabIndex = 306
-        Me.NumericUpDown3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_monstertail.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_monstertail.Location = New System.Drawing.Point(334, 73)
+        Me.valu_monstertail.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.valu_monstertail.Name = "valu_monstertail"
+        Me.valu_monstertail.Size = New System.Drawing.Size(52, 16)
+        Me.valu_monstertail.TabIndex = 306
+        Me.valu_monstertail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'NumericUpDown4
         '
@@ -771,25 +771,25 @@ Partial Class Form1
         Me.NumericUpDown4.TabIndex = 309
         Me.NumericUpDown4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown5
+        'valu_monstergust
         '
-        Me.NumericUpDown5.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown5.Location = New System.Drawing.Point(562, 73)
-        Me.NumericUpDown5.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.NumericUpDown5.Name = "NumericUpDown5"
-        Me.NumericUpDown5.Size = New System.Drawing.Size(52, 16)
-        Me.NumericUpDown5.TabIndex = 308
-        Me.NumericUpDown5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_monstergust.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_monstergust.Location = New System.Drawing.Point(562, 73)
+        Me.valu_monstergust.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.valu_monstergust.Name = "valu_monstergust"
+        Me.valu_monstergust.Size = New System.Drawing.Size(52, 16)
+        Me.valu_monstergust.TabIndex = 308
+        Me.valu_monstergust.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown6
+        'valu_monsterhorn
         '
-        Me.NumericUpDown6.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown6.Location = New System.Drawing.Point(448, 73)
-        Me.NumericUpDown6.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.NumericUpDown6.Name = "NumericUpDown6"
-        Me.NumericUpDown6.Size = New System.Drawing.Size(52, 16)
-        Me.NumericUpDown6.TabIndex = 307
-        Me.NumericUpDown6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_monsterhorn.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_monsterhorn.Location = New System.Drawing.Point(448, 73)
+        Me.valu_monsterhorn.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.valu_monsterhorn.Name = "valu_monsterhorn"
+        Me.valu_monsterhorn.Size = New System.Drawing.Size(52, 16)
+        Me.valu_monsterhorn.TabIndex = 307
+        Me.valu_monsterhorn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label7
         '
@@ -1943,13 +1943,13 @@ Partial Class Form1
         Me.Panel_inventory.Controls.Add(Me.PictureBox5)
         Me.Panel_inventory.Controls.Add(Me.NumericUpDown8)
         Me.Panel_inventory.Controls.Add(Me.PictureBox2)
-        Me.Panel_inventory.Controls.Add(Me.NumericUpDown1)
+        Me.Panel_inventory.Controls.Add(Me.valu_ruppe)
         Me.Panel_inventory.Controls.Add(Me.NumericUpDown4)
         Me.Panel_inventory.Controls.Add(Me.Label7)
-        Me.Panel_inventory.Controls.Add(Me.NumericUpDown5)
-        Me.Panel_inventory.Controls.Add(Me.NumericUpDown6)
-        Me.Panel_inventory.Controls.Add(Me.NumericUpDown2)
-        Me.Panel_inventory.Controls.Add(Me.NumericUpDown3)
+        Me.Panel_inventory.Controls.Add(Me.valu_monstergust)
+        Me.Panel_inventory.Controls.Add(Me.valu_monsterhorn)
+        Me.Panel_inventory.Controls.Add(Me.valu_lostmaiamai)
+        Me.Panel_inventory.Controls.Add(Me.valu_monstertail)
         Me.Panel_inventory.Location = New System.Drawing.Point(152, 77)
         Me.Panel_inventory.Name = "Panel_inventory"
         Me.Panel_inventory.Size = New System.Drawing.Size(676, 540)
@@ -2831,8 +2831,8 @@ Partial Class Form1
         Me.Controls.Add(Me.Menu_panel)
         Me.Controls.Add(Me.TLSE_header)
         Me.Controls.Add(Me.TLSE_logo_update)
-        Me.Controls.Add(Me.Panel_inventory)
         Me.Controls.Add(Me.Panel_linkstatus)
+        Me.Controls.Add(Me.Panel_inventory)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -2859,12 +2859,12 @@ Partial Class Form1
         CType(Me.Minimizebutton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TLSE_title, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_ruppe, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_lostmaiamai, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_monstertail, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_monstergust, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_monsterhorn, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Menu_panel.ResumeLayout(False)
         CType(Me.Icon_description, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_done.ResumeLayout(False)
@@ -3090,12 +3090,12 @@ Partial Class Form1
     Friend WithEvents TLSE_logo_update As PictureBox
     Friend WithEvents Text_datacrc32_z1 As TextBox
     Friend WithEvents Text_crc32_z1 As TextBox
-    Friend WithEvents NumericUpDown1 As NumericUpDown
-    Friend WithEvents NumericUpDown2 As NumericUpDown
-    Friend WithEvents NumericUpDown3 As NumericUpDown
+    Friend WithEvents valu_ruppe As NumericUpDown
+    Friend WithEvents valu_lostmaiamai As NumericUpDown
+    Friend WithEvents valu_monstertail As NumericUpDown
     Friend WithEvents NumericUpDown4 As NumericUpDown
-    Friend WithEvents NumericUpDown5 As NumericUpDown
-    Friend WithEvents NumericUpDown6 As NumericUpDown
+    Friend WithEvents valu_monstergust As NumericUpDown
+    Friend WithEvents valu_monsterhorn As NumericUpDown
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Text_crc32_z1reflet As TextBox

@@ -8,6 +8,68 @@ Public Class Form1
     Private MousedwnX As Integer
     Private MousedwnY As Integer
     Dim applicationpath = Application.StartupPath
+    Dim CRC32Data1 = &H0
+    Dim Actualworld = &H0
+    Dim Sector = &H4
+    Dim Zonename = &HC
+    Dim Stoyprogress = &H40
+    Dim Actuahearts = &HC0
+    Dim Maxhearts = &HC1
+    Dim Heartfragments = &HC2
+    Dim Bottle1item = &HC3
+    Dim Bottle2item = &HC4
+    Dim Bottle3item = &HC5
+    Dim Bottle4item = &HC6
+    Dim Bottle5item = &HC7
+    Dim Swordupgrad = &HC8
+    Dim Shield = &HC9
+    Dim Bombs = &HCA
+    Dim Boomerang = &HCB
+    Dim Bow = &HCC
+    Dim Bowoflight = &HCD
+    Dim Hammer = &HCE
+    Dim Sandrod = &HCF
+    Dim Firerod = &HD0
+    Dim Icerod = &HD1
+    Dim Tonadorod = &HD2
+    Dim Hookshot = &HD3
+    Dim Lamp = &HD4
+    Dim Net = &HD5
+    Dim Hintglasses = &HD6
+    Dim Irenesbell = &HD7
+    Dim Scootfruit = &HD8
+    Dim Foulfruit = &HD9
+    Dim Bottle1 = &HDA
+    Dim Bottle2 = &HDB
+    Dim Bottle3 = &HDC
+    Dim Bottle4 = &HDD
+    Dim Bottle5 = &HDE
+    Dim Raviobracelet = &HDF
+    Dim Pendwisdom = &HE0
+    Dim Pendpower = &HE1
+    Dim Pendcourage = &HE2
+    Dim Amulet = &HE3
+    Dim Zoraflippers = &HE4
+    Dim Smoothgem = &HE5
+    Dim Powerglove = &HE6
+    Dim Tunic = &HE7
+    Dim Pegasusboots = &HE8
+    Dim Beebadge = &HE9
+    Dim Coiledsword = &HEC
+    Dim Staminascroll = &HEE
+    Dim Pouch = &HEF
+    Dim Monstertail = &H18B
+    Dim Monstergust = &H18C
+    Dim Monsterhorn = &H18D
+    Dim Rupee = &H18E
+    Dim Lostmaiamai = &H190
+    Dim Dungeonmaiamai = &H4E0
+    Dim Savename = &HD60
+    Dim CRC32_1 = &HDFC
+    Dim CRC32Data2 = &HE00
+    Dim CRC32_2 = &H13FC
+    Dim CRC32Data3 = &H1400
+    Dim CRC32_3 = &H15FC
 
     Private Sub Closebutton_Click(sender As Object, e As EventArgs) Handles Closebutton.Click
         Me.Close()
@@ -82,20 +144,24 @@ Public Class Form1
     Public Sub readzeldasave()
         Try
             Dim Reader As New PackageIO.Reader(Zeldasave, PackageIO.Endian.Little)
-            Reader.Position = &H0
+            Reader.Position = CRC32Data1
             Text_datacrc32_z1.Text = Reader.ReadHexString(&HDFC)
-            Reader.Position = &H18E
-            NumericUpDown1.Value = Reader.ReadUInt16
-            Reader.Position = &H190
-            NumericUpDown2.Value = Reader.ReadByte
-            Reader.Position = &H18B
-            NumericUpDown3.Value = Reader.ReadByte
-            Reader.Position = &H18D
-            NumericUpDown6.Value = Reader.ReadByte
-            Reader.Position = &H18C
-            NumericUpDown5.Value = Reader.ReadByte
-            Reader.Position = &H193
-            NumericUpDown4.Value = Reader.ReadByte
+            Reader.Position = Rupee
+            valu_ruppe.Value = Reader.ReadUInt16
+            Reader.Position = Lostmaiamai
+            valu_lostmaiamai.Value = Reader.ReadByte
+            Reader.Position = Monstertail
+            valu_monstertail.Value = Reader.ReadByte
+            Reader.Position = Monsterhorn
+            valu_monsterhorn.Value = Reader.ReadByte
+            Reader.Position = Monstergust
+            valu_monstergust.Value = Reader.ReadByte
+            Reader.Position = Actuahearts
+            valu_currenthearts.Value = Reader.ReadByte
+            Reader.Position = Maxhearts
+            valu_maxhearts.Value = Reader.ReadByte
+            Reader.Position = Savename
+            Text_savename.Text = Reader.ReadUnicodeString(10)
         Catch ex As Exception
 
         End Try
@@ -181,10 +247,16 @@ Public Class Form1
     Public Sub Writezelda()
         Try
             Dim Writerx As New PackageIO.Writer(Zeldasave, PackageIO.Endian.Little)
-            Writerx.Position = &H18E
-            Writerx.WriteUInt16(NumericUpDown1.Value)
-            Writerx.Position = &H18E
-            Writerx.WriteUInt16(NumericUpDown1.Value)
+            Writerx.Position = Rupee
+            Writerx.WriteUInt16(valu_ruppe.Value)
+            Writerx.Position = Rupee
+            Writerx.WriteUInt16(valu_ruppe.Value)
+            For i = 0 To 9
+                Writerx.Position = Savename + i
+                Writerx.WriteInt8(0)
+            Next
+            Writerx.Position = Savename
+            Writerx.WriteUnicodeString(Text_savename.Text)
         Catch ex As Exception
 
         End Try
@@ -193,16 +265,18 @@ Public Class Form1
     Public Sub writezelda1()
         Try
             Dim fs As New FileStream(Zeldasave, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
-            fs.Position = &H190
-            fs.WriteByte(NumericUpDown2.Value)
-            fs.Position = &H18B
-            fs.WriteByte(NumericUpDown3.Value)
-            fs.Position = &H18D
-            fs.WriteByte(NumericUpDown6.Value)
-            fs.Position = &H18C
-            fs.WriteByte(NumericUpDown5.Value)
-            fs.Position = &H193
-            fs.WriteByte(NumericUpDown4.Value)
+            fs.Position = Lostmaiamai
+            fs.WriteByte(valu_lostmaiamai.Value)
+            fs.Position = Monstertail
+            fs.WriteByte(valu_monstertail.Value)
+            fs.Position = Monsterhorn
+            fs.WriteByte(valu_monsterhorn.Value)
+            fs.Position = Monstergust
+            fs.WriteByte(valu_monstergust.Value)
+            fs.Position = Actuahearts
+            fs.WriteByte(valu_currenthearts.Value)
+            fs.Position = Maxhearts
+            fs.WriteByte(valu_maxhearts.Value)
         Catch ex As Exception
         End Try
     End Sub
