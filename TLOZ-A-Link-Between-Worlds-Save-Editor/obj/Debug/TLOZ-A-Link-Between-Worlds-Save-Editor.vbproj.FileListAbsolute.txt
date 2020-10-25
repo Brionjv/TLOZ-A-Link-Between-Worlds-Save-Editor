@@ -12,3 +12,16 @@ C:\Users\brice\source\repos\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-B
 C:\Users\brice\source\repos\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\obj\Debug\TLOZ-A-Link-Between-Worlds-Save-Editor.pdb
 C:\Users\brice\source\repos\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\bin\Debug\PackageIO.dll
 C:\Users\brice\source\repos\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\obj\Debug\TLOZ-A-Link-Between-Worlds-Save-Editor.vbproj.CopyComplete
+D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\bin\Debug\TLOZ-A-Link-Between-Worlds-Save-Editor.exe.config
+D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\bin\Debug\TLOZ-A-Link-Between-Worlds-Save-Editor.exe
+D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\bin\Debug\TLOZ-A-Link-Between-Worlds-Save-Editor.pdb
+D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\bin\Debug\TLOZ-A-Link-Between-Worlds-Save-Editor.xml
+D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\bin\Debug\PackageIO.dll
+D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\obj\Debug\TLOZ_A_Link_Between_Worlds_Save_Editor.Form1.resources
+D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\obj\Debug\TLOZ_A_Link_Between_Worlds_Save_Editor.Resources.resources
+D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\obj\Debug\TLOZ-A-Link-Between-Worlds-Save-Editor.vbproj.GenerateResource.cache
+D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\obj\Debug\TLOZ-A-Link-Between-Worlds-Save-Editor.vbproj.CoreCompileInputs.cache
+D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\obj\Debug\TLOZ-A-Link-Between-Worlds-Save-Editor.vbproj.CopyComplete
+D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\obj\Debug\TLOZ-A-Link-Between-Worlds-Save-Editor.exe
+D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\obj\Debug\TLOZ-A-Link-Between-Worlds-Save-Editor.xml
+D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\obj\Debug\TLOZ-A-Link-Between-Worlds-Save-Editor.pdb

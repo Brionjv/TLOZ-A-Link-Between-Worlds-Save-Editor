@@ -31,7 +31,7 @@ Public Class Form1
     Dim Sandrod = &HCF
     Dim Firerod = &HD0
     Dim Icerod = &HD1
-    Dim Tonadorod = &HD2
+    Dim Tornadorod = &HD2
     Dim Hookshot = &HD3
     Dim Lamp = &HD4
     Dim Net = &HD5
@@ -162,6 +162,50 @@ Public Class Form1
             valu_maxhearts.Value = Reader.ReadByte
             Reader.Position = Savename
             Text_savename.Text = Reader.ReadUnicodeString(10)
+            Reader.Position = Actualworld
+            valu_actualworld.Value = Reader.ReadByte
+            Reader.Position = Sector
+            valu_sector.Value = Reader.ReadByte
+            Reader.Position = Bombs
+            valu_bombs.Value = Reader.ReadByte
+            Reader.Position = Boomerang
+            valu_boomerang.Value = Reader.ReadByte
+            Reader.Position = Bow
+            valu_bow.Value = Reader.ReadByte
+            Reader.Position = Bowoflight
+            valu_bowoflight.Value = Reader.ReadByte
+            Reader.Position = Hammer
+            valu_hammer.Value = Reader.ReadByte
+            Reader.Position = Sandrod
+            valu_sandrod.Value = Reader.ReadByte
+            Reader.Position = Firerod
+            valu_firerod.Value = Reader.ReadByte
+            Reader.Position = Icerod
+            valu_icerod.Value = Reader.ReadByte
+            Reader.Position = Tornadorod
+            valu_tornadorod.Value = Reader.ReadByte
+            Reader.Position = Hookshot
+            valu_hookshot.Value = Reader.ReadByte
+            Reader.Position = Lamp
+            valu_lamp.Value = Reader.ReadByte
+            Reader.Position = Net
+            valu_net.Value = Reader.ReadByte
+            Reader.Position = Hintglasses
+            valu_hintglasses.Value = Reader.ReadByte
+            Reader.Position = Scootfruit
+            valu_scootfruit.Value = Reader.ReadByte
+            Reader.Position = Foulfruit
+            valu_foulfruit.Value = Reader.ReadByte
+            Reader.Position = Bottle1
+            valu_bottle1.Value = Reader.ReadByte
+            Reader.Position = Bottle2
+            valu_bottle2.Value = Reader.ReadByte
+            Reader.Position = Bottle3
+            valu_bottle3.Value = Reader.ReadByte
+            Reader.Position = Bottle4
+            valu_bottle4.Value = Reader.ReadByte
+            Reader.Position = Bottle5
+            valu_bottle5.Value = Reader.ReadByte
         Catch ex As Exception
 
         End Try
@@ -237,11 +281,7 @@ Public Class Form1
         readzeldasave()
         Crc32_z1()
         writezelda2()
-        Writezelda()
-        writezelda1()
-        readzeldasave()
-        Crc32_z1()
-        writezelda2()
+        Text_menu_save.Visible = False
     End Sub
 
     Public Sub Writezelda()
@@ -258,7 +298,6 @@ Public Class Form1
             Writerx.Position = Savename
             Writerx.WriteUnicodeString(Text_savename.Text)
         Catch ex As Exception
-
         End Try
     End Sub
 
@@ -277,6 +316,46 @@ Public Class Form1
             fs.WriteByte(valu_currenthearts.Value)
             fs.Position = Maxhearts
             fs.WriteByte(valu_maxhearts.Value)
+            fs.Position = Bombs
+            fs.WriteByte(valu_bombs.Value)
+            fs.Position = Boomerang
+            fs.WriteByte(valu_boomerang.Value)
+            fs.Position = Bow
+            fs.WriteByte(valu_bow.Value)
+            fs.Position = Bowoflight
+            fs.WriteByte(valu_bowoflight.Value)
+            fs.Position = Hammer
+            fs.WriteByte(valu_hammer.Value)
+            fs.Position = Sandrod
+            fs.WriteByte(valu_sandrod.Value)
+            fs.Position = Firerod
+            fs.WriteByte(valu_firerod.Value)
+            fs.Position = Icerod
+            fs.WriteByte(valu_icerod.Value)
+            fs.Position = Tornadorod
+            fs.WriteByte(valu_tornadorod.Value)
+            fs.Position = Hookshot
+            fs.WriteByte(valu_hookshot.Value)
+            fs.Position = Lamp
+            fs.WriteByte(valu_lamp.Value)
+            fs.Position = Net
+            fs.WriteByte(valu_net.Value)
+            fs.Position = Hintglasses
+            fs.WriteByte(valu_hintglasses.Value)
+            fs.Position = Scootfruit
+            fs.WriteByte(valu_scootfruit.Value)
+            fs.Position = Foulfruit
+            fs.WriteByte(valu_foulfruit.Value)
+            fs.Position = Bottle1
+            fs.WriteByte(valu_bottle1.Value)
+            fs.Position = Bottle2
+            fs.WriteByte(valu_bottle2.Value)
+            fs.Position = Bottle3
+            fs.WriteByte(valu_bottle3.Value)
+            fs.Position = Bottle4
+            fs.WriteByte(valu_bottle4.Value)
+            fs.Position = Bottle5
+            fs.WriteByte(valu_bottle5.Value)
         Catch ex As Exception
         End Try
     End Sub
@@ -3751,4 +3830,21 @@ Public Class Form1
         Panel_inventory.Visible = True
     End Sub
 
+    Private Sub valu_actualworld_ValueChanged(sender As Object, e As EventArgs) Handles valu_actualworld.ValueChanged
+        If valu_actualworld.Value = 0 Then
+            Select_actualworld.SelectedItem = Select_actualworld.Items.Item(0)
+        End If
+        If valu_actualworld.Value = 1 Then
+            Select_actualworld.SelectedItem = Select_actualworld.Items.Item(1)
+        End If
+    End Sub
+
+    Private Sub Select_actualworld_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_actualworld.SelectedIndexChanged
+        If Select_actualworld.SelectedItem = Select_actualworld.Items.Item(0) Then
+            valu_actualworld.Value = 0
+        End If
+        If Select_actualworld.SelectedItem = Select_actualworld.Items.Item(1) Then
+            valu_actualworld.Value = 1
+        End If
+    End Sub
 End Class
