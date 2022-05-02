@@ -51,10 +51,8 @@ Partial Class Form1
         Me.valu_ruppe = New System.Windows.Forms.NumericUpDown()
         Me.valu_lostmaiamai = New System.Windows.Forms.NumericUpDown()
         Me.valu_monstertail = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown4 = New System.Windows.Forms.NumericUpDown()
         Me.valu_monstergust = New System.Windows.Forms.NumericUpDown()
         Me.valu_monsterhorn = New System.Windows.Forms.NumericUpDown()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Text_crc32_z1reflet = New System.Windows.Forms.TextBox()
         Me.Menu_panel = New System.Windows.Forms.Panel()
@@ -94,12 +92,8 @@ Partial Class Form1
         Me.TLSE_logo_update = New System.Windows.Forms.PictureBox()
         Me.Panel_linkstatus = New System.Windows.Forms.Panel()
         Me.valu_sector = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown9 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.valu_actualworld = New System.Windows.Forms.NumericUpDown()
         Me.Select_actualworld = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -150,11 +144,11 @@ Partial Class Form1
         Me.Icon_currentheart_2 = New System.Windows.Forms.PictureBox()
         Me.Icon_currentheart_1 = New System.Windows.Forms.PictureBox()
         Me.Panel_inventory = New System.Windows.Forms.Panel()
-        Me.PictureBox55 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox31 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox30 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox29 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox28 = New System.Windows.Forms.PictureBox()
+        Me.Icon_monstergust = New System.Windows.Forms.PictureBox()
+        Me.Icon_monsterhorn = New System.Windows.Forms.PictureBox()
+        Me.Icon_monstertail = New System.Windows.Forms.PictureBox()
+        Me.Icon_lostmaiamai = New System.Windows.Forms.PictureBox()
+        Me.Icon_rupee = New System.Windows.Forms.PictureBox()
         Me.NumericUpDown41 = New System.Windows.Forms.NumericUpDown()
         Me.PictureBox36 = New System.Windows.Forms.PictureBox()
         Me.NumericUpDown42 = New System.Windows.Forms.NumericUpDown()
@@ -193,16 +187,16 @@ Partial Class Form1
         Me.PictureBox21 = New System.Windows.Forms.PictureBox()
         Me.NumericUpDown27 = New System.Windows.Forms.NumericUpDown()
         Me.PictureBox22 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown28 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox23 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown29 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox24 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown30 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox25 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown31 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox26 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown32 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox27 = New System.Windows.Forms.PictureBox()
+        Me.valu_bottleitem_5 = New System.Windows.Forms.NumericUpDown()
+        Me.Icon_bottleitem_5 = New System.Windows.Forms.PictureBox()
+        Me.valu_bottleitem_4 = New System.Windows.Forms.NumericUpDown()
+        Me.Icon_bottleitem_4 = New System.Windows.Forms.PictureBox()
+        Me.valu_bottleitem_3 = New System.Windows.Forms.NumericUpDown()
+        Me.Icon_bottleitem_3 = New System.Windows.Forms.PictureBox()
+        Me.valu_bottleitem_2 = New System.Windows.Forms.NumericUpDown()
+        Me.Icon_bottleitem_2 = New System.Windows.Forms.PictureBox()
+        Me.valu_bottleitem_1 = New System.Windows.Forms.NumericUpDown()
+        Me.Icon_bottleitem_1 = New System.Windows.Forms.PictureBox()
         Me.valu_net = New System.Windows.Forms.NumericUpDown()
         Me.Icon_net = New System.Windows.Forms.PictureBox()
         Me.valu_lamp = New System.Windows.Forms.NumericUpDown()
@@ -243,6 +237,8 @@ Partial Class Form1
         Me.Icon_bowoflight = New System.Windows.Forms.PictureBox()
         Me.valu_bow = New System.Windows.Forms.NumericUpDown()
         Me.Icon_bow = New System.Windows.Forms.PictureBox()
+        Me.Panel_description = New System.Windows.Forms.Panel()
+        Me.Text_description = New System.Windows.Forms.Label()
         Me.TLSE_header.SuspendLayout()
         Me.Panel_menubar.SuspendLayout()
         Me.Panel_bspesymb.SuspendLayout()
@@ -266,7 +262,6 @@ Partial Class Form1
         CType(Me.valu_ruppe, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_lostmaiamai, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_monstertail, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_monstergust, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_monsterhorn, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Menu_panel.SuspendLayout()
@@ -291,8 +286,6 @@ Partial Class Form1
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_linkstatus.SuspendLayout()
         CType(Me.valu_sector, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_actualworld, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_maxhearts, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -338,11 +331,11 @@ Partial Class Form1
         CType(Me.Icon_currentheart_2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_currentheart_1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_inventory.SuspendLayout()
-        CType(Me.PictureBox55, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_monstergust, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_monsterhorn, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_monstertail, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_lostmaiamai, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_rupee, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown41, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown42, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -381,16 +374,16 @@ Partial Class Form1
         CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown27, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown28, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown29, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown30, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown31, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown32, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_bottleitem_5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_bottleitem_5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_bottleitem_4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_bottleitem_4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_bottleitem_3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_bottleitem_3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_bottleitem_2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_bottleitem_2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_bottleitem_1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_bottleitem_1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_net, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_net, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_lamp, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -431,6 +424,7 @@ Partial Class Form1
         CType(Me.Icon_bowoflight, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_bow, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_bow, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_description.SuspendLayout()
         Me.SuspendLayout()
         '
         'TLSE_header
@@ -763,16 +757,6 @@ Partial Class Form1
         Me.valu_monstertail.TabIndex = 306
         Me.valu_monstertail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown4
-        '
-        Me.NumericUpDown4.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown4.Location = New System.Drawing.Point(565, 480)
-        Me.NumericUpDown4.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.NumericUpDown4.Name = "NumericUpDown4"
-        Me.NumericUpDown4.Size = New System.Drawing.Size(52, 16)
-        Me.NumericUpDown4.TabIndex = 309
-        Me.NumericUpDown4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'valu_monstergust
         '
         Me.valu_monstergust.BorderStyle = System.Windows.Forms.BorderStyle.None
@@ -792,15 +776,6 @@ Partial Class Form1
         Me.valu_monsterhorn.Size = New System.Drawing.Size(52, 16)
         Me.valu_monsterhorn.TabIndex = 307
         Me.valu_monsterhorn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(553, 464)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(80, 13)
-        Me.Label7.TabIndex = 315
-        Me.Label7.Text = "Roche legende"
         '
         'Label8
         '
@@ -841,9 +816,10 @@ Partial Class Form1
         '
         Me.Icon_description.BackColor = System.Drawing.Color.Transparent
         Me.Icon_description.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Icon_description.Location = New System.Drawing.Point(99, 524)
+        Me.Icon_description.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_description
+        Me.Icon_description.Location = New System.Drawing.Point(74, 468)
         Me.Icon_description.Name = "Icon_description"
-        Me.Icon_description.Size = New System.Drawing.Size(50, 50)
+        Me.Icon_description.Size = New System.Drawing.Size(73, 106)
         Me.Icon_description.TabIndex = 9
         Me.Icon_description.TabStop = False
         Me.Icon_description.Visible = False
@@ -916,6 +892,7 @@ Partial Class Form1
         Me.AdvH_islandedit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.AdvH_islandedit.TabIndex = 69
         Me.AdvH_islandedit.TabStop = False
+        Me.AdvH_islandedit.Visible = False
         '
         'Menu_text_linkstatus
         '
@@ -941,6 +918,7 @@ Partial Class Form1
         Me.Menu_settings.Name = "Menu_settings"
         Me.Menu_settings.Size = New System.Drawing.Size(150, 34)
         Me.Menu_settings.TabIndex = 2
+        Me.Menu_settings.Visible = False
         '
         'AdvH_settings
         '
@@ -990,6 +968,7 @@ Partial Class Form1
         Me.AdvH_miiedit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.AdvH_miiedit.TabIndex = 69
         Me.AdvH_miiedit.TabStop = False
+        Me.AdvH_miiedit.Visible = False
         '
         'Menu_text_inventory
         '
@@ -1016,6 +995,7 @@ Partial Class Form1
         Me.Menu_storymap.Name = "Menu_storymap"
         Me.Menu_storymap.Size = New System.Drawing.Size(150, 34)
         Me.Menu_storymap.TabIndex = 5
+        Me.Menu_storymap.Visible = False
         '
         'AdvH_itemsedit
         '
@@ -1053,6 +1033,7 @@ Partial Class Form1
         Me.Menu_manual.Name = "Menu_manual"
         Me.Menu_manual.Size = New System.Drawing.Size(150, 34)
         Me.Menu_manual.TabIndex = 8
+        Me.Menu_manual.Visible = False
         '
         'AdvH_manual
         '
@@ -1242,12 +1223,8 @@ Partial Class Form1
         Me.Panel_linkstatus.BackColor = System.Drawing.Color.Transparent
         Me.Panel_linkstatus.BackgroundImage = CType(resources.GetObject("Panel_linkstatus.BackgroundImage"), System.Drawing.Image)
         Me.Panel_linkstatus.Controls.Add(Me.valu_sector)
-        Me.Panel_linkstatus.Controls.Add(Me.NumericUpDown9)
-        Me.Panel_linkstatus.Controls.Add(Me.PictureBox4)
         Me.Panel_linkstatus.Controls.Add(Me.valu_actualworld)
         Me.Panel_linkstatus.Controls.Add(Me.Select_actualworld)
-        Me.Panel_linkstatus.Controls.Add(Me.ComboBox1)
-        Me.Panel_linkstatus.Controls.Add(Me.TextBox3)
         Me.Panel_linkstatus.Controls.Add(Me.PictureBox3)
         Me.Panel_linkstatus.Controls.Add(Me.Label9)
         Me.Panel_linkstatus.Controls.Add(Me.Label1)
@@ -1309,29 +1286,11 @@ Partial Class Form1
         'valu_sector
         '
         Me.valu_sector.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_sector.Location = New System.Drawing.Point(181, 133)
+        Me.valu_sector.Location = New System.Drawing.Point(203, 60)
         Me.valu_sector.Name = "valu_sector"
         Me.valu_sector.Size = New System.Drawing.Size(47, 16)
         Me.valu_sector.TabIndex = 374
         Me.valu_sector.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'NumericUpDown9
-        '
-        Me.NumericUpDown9.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown9.Location = New System.Drawing.Point(48, 407)
-        Me.NumericUpDown9.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.NumericUpDown9.Name = "NumericUpDown9"
-        Me.NumericUpDown9.Size = New System.Drawing.Size(48, 16)
-        Me.NumericUpDown9.TabIndex = 373
-        Me.NumericUpDown9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Location = New System.Drawing.Point(48, 375)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(48, 48)
-        Me.PictureBox4.TabIndex = 372
-        Me.PictureBox4.TabStop = False
         '
         'valu_actualworld
         '
@@ -1341,6 +1300,7 @@ Partial Class Form1
         Me.valu_actualworld.Size = New System.Drawing.Size(47, 16)
         Me.valu_actualworld.TabIndex = 371
         Me.valu_actualworld.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_actualworld.Visible = False
         '
         'Select_actualworld
         '
@@ -1354,27 +1314,6 @@ Partial Class Form1
         Me.Select_actualworld.Size = New System.Drawing.Size(115, 21)
         Me.Select_actualworld.TabIndex = 370
         '
-        'ComboBox1
-        '
-        Me.ComboBox1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(401, 86)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(227, 21)
-        Me.ComboBox1.TabIndex = 369
-        '
-        'TextBox3
-        '
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TextBox3.Location = New System.Drawing.Point(401, 112)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(227, 13)
-        Me.TextBox3.TabIndex = 368
-        Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'PictureBox3
         '
         Me.PictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -1383,6 +1322,7 @@ Partial Class Form1
         Me.PictureBox3.Size = New System.Drawing.Size(90, 90)
         Me.PictureBox3.TabIndex = 367
         Me.PictureBox3.TabStop = False
+        Me.PictureBox3.Visible = False
         '
         'Label9
         '
@@ -1410,6 +1350,7 @@ Partial Class Form1
         Me.valu_maxhearts.Size = New System.Drawing.Size(47, 16)
         Me.valu_maxhearts.TabIndex = 363
         Me.valu_maxhearts.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_maxhearts.Visible = False
         '
         'valu_currenthearts
         '
@@ -1419,6 +1360,7 @@ Partial Class Form1
         Me.valu_currenthearts.Size = New System.Drawing.Size(47, 16)
         Me.valu_currenthearts.TabIndex = 362
         Me.valu_currenthearts.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_currenthearts.Visible = False
         '
         'Title_maxhearts
         '
@@ -1862,11 +1804,11 @@ Partial Class Form1
         Me.Panel_inventory.BackColor = System.Drawing.Color.Transparent
         Me.Panel_inventory.BackgroundImage = CType(resources.GetObject("Panel_inventory.BackgroundImage"), System.Drawing.Image)
         Me.Panel_inventory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel_inventory.Controls.Add(Me.PictureBox55)
-        Me.Panel_inventory.Controls.Add(Me.PictureBox31)
-        Me.Panel_inventory.Controls.Add(Me.PictureBox30)
-        Me.Panel_inventory.Controls.Add(Me.PictureBox29)
-        Me.Panel_inventory.Controls.Add(Me.PictureBox28)
+        Me.Panel_inventory.Controls.Add(Me.Icon_monstergust)
+        Me.Panel_inventory.Controls.Add(Me.Icon_monsterhorn)
+        Me.Panel_inventory.Controls.Add(Me.Icon_monstertail)
+        Me.Panel_inventory.Controls.Add(Me.Icon_lostmaiamai)
+        Me.Panel_inventory.Controls.Add(Me.Icon_rupee)
         Me.Panel_inventory.Controls.Add(Me.NumericUpDown41)
         Me.Panel_inventory.Controls.Add(Me.PictureBox36)
         Me.Panel_inventory.Controls.Add(Me.NumericUpDown42)
@@ -1905,16 +1847,16 @@ Partial Class Form1
         Me.Panel_inventory.Controls.Add(Me.PictureBox21)
         Me.Panel_inventory.Controls.Add(Me.NumericUpDown27)
         Me.Panel_inventory.Controls.Add(Me.PictureBox22)
-        Me.Panel_inventory.Controls.Add(Me.NumericUpDown28)
-        Me.Panel_inventory.Controls.Add(Me.PictureBox23)
-        Me.Panel_inventory.Controls.Add(Me.NumericUpDown29)
-        Me.Panel_inventory.Controls.Add(Me.PictureBox24)
-        Me.Panel_inventory.Controls.Add(Me.NumericUpDown30)
-        Me.Panel_inventory.Controls.Add(Me.PictureBox25)
-        Me.Panel_inventory.Controls.Add(Me.NumericUpDown31)
-        Me.Panel_inventory.Controls.Add(Me.PictureBox26)
-        Me.Panel_inventory.Controls.Add(Me.NumericUpDown32)
-        Me.Panel_inventory.Controls.Add(Me.PictureBox27)
+        Me.Panel_inventory.Controls.Add(Me.valu_bottleitem_5)
+        Me.Panel_inventory.Controls.Add(Me.Icon_bottleitem_5)
+        Me.Panel_inventory.Controls.Add(Me.valu_bottleitem_4)
+        Me.Panel_inventory.Controls.Add(Me.Icon_bottleitem_4)
+        Me.Panel_inventory.Controls.Add(Me.valu_bottleitem_3)
+        Me.Panel_inventory.Controls.Add(Me.Icon_bottleitem_3)
+        Me.Panel_inventory.Controls.Add(Me.valu_bottleitem_2)
+        Me.Panel_inventory.Controls.Add(Me.Icon_bottleitem_2)
+        Me.Panel_inventory.Controls.Add(Me.valu_bottleitem_1)
+        Me.Panel_inventory.Controls.Add(Me.Icon_bottleitem_1)
         Me.Panel_inventory.Controls.Add(Me.valu_net)
         Me.Panel_inventory.Controls.Add(Me.Icon_net)
         Me.Panel_inventory.Controls.Add(Me.valu_lamp)
@@ -1956,8 +1898,6 @@ Partial Class Form1
         Me.Panel_inventory.Controls.Add(Me.valu_bow)
         Me.Panel_inventory.Controls.Add(Me.Icon_bow)
         Me.Panel_inventory.Controls.Add(Me.valu_ruppe)
-        Me.Panel_inventory.Controls.Add(Me.NumericUpDown4)
-        Me.Panel_inventory.Controls.Add(Me.Label7)
         Me.Panel_inventory.Controls.Add(Me.valu_monstergust)
         Me.Panel_inventory.Controls.Add(Me.valu_monsterhorn)
         Me.Panel_inventory.Controls.Add(Me.valu_lostmaiamai)
@@ -1968,487 +1908,550 @@ Partial Class Form1
         Me.Panel_inventory.TabIndex = 319
         Me.Panel_inventory.Visible = False
         '
-        'PictureBox55
+        'Icon_monstergust
         '
-        Me.PictureBox55.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_monsterguts
-        Me.PictureBox55.Location = New System.Drawing.Point(526, 63)
-        Me.PictureBox55.Name = "PictureBox55"
-        Me.PictureBox55.Size = New System.Drawing.Size(35, 35)
-        Me.PictureBox55.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox55.TabIndex = 415
-        Me.PictureBox55.TabStop = False
+        Me.Icon_monstergust.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_monstergust.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_monsterguts
+        Me.Icon_monstergust.Location = New System.Drawing.Point(526, 63)
+        Me.Icon_monstergust.Name = "Icon_monstergust"
+        Me.Icon_monstergust.Size = New System.Drawing.Size(35, 35)
+        Me.Icon_monstergust.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Icon_monstergust.TabIndex = 415
+        Me.Icon_monstergust.TabStop = False
         '
-        'PictureBox31
+        'Icon_monsterhorn
         '
-        Me.PictureBox31.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_monsterhorn
-        Me.PictureBox31.Location = New System.Drawing.Point(412, 63)
-        Me.PictureBox31.Name = "PictureBox31"
-        Me.PictureBox31.Size = New System.Drawing.Size(35, 35)
-        Me.PictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox31.TabIndex = 414
-        Me.PictureBox31.TabStop = False
+        Me.Icon_monsterhorn.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_monsterhorn.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_monsterhorn
+        Me.Icon_monsterhorn.Location = New System.Drawing.Point(412, 63)
+        Me.Icon_monsterhorn.Name = "Icon_monsterhorn"
+        Me.Icon_monsterhorn.Size = New System.Drawing.Size(35, 35)
+        Me.Icon_monsterhorn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Icon_monsterhorn.TabIndex = 414
+        Me.Icon_monsterhorn.TabStop = False
         '
-        'PictureBox30
+        'Icon_monstertail
         '
-        Me.PictureBox30.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_monstertail
-        Me.PictureBox30.Location = New System.Drawing.Point(298, 63)
-        Me.PictureBox30.Name = "PictureBox30"
-        Me.PictureBox30.Size = New System.Drawing.Size(35, 35)
-        Me.PictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox30.TabIndex = 413
-        Me.PictureBox30.TabStop = False
+        Me.Icon_monstertail.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_monstertail.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_monstertail
+        Me.Icon_monstertail.Location = New System.Drawing.Point(298, 63)
+        Me.Icon_monstertail.Name = "Icon_monstertail"
+        Me.Icon_monstertail.Size = New System.Drawing.Size(35, 35)
+        Me.Icon_monstertail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Icon_monstertail.TabIndex = 413
+        Me.Icon_monstertail.TabStop = False
         '
-        'PictureBox29
+        'Icon_lostmaiamai
         '
-        Me.PictureBox29.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_lostmaiamai
-        Me.PictureBox29.Location = New System.Drawing.Point(184, 63)
-        Me.PictureBox29.Name = "PictureBox29"
-        Me.PictureBox29.Size = New System.Drawing.Size(35, 35)
-        Me.PictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox29.TabIndex = 412
-        Me.PictureBox29.TabStop = False
+        Me.Icon_lostmaiamai.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_lostmaiamai.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_lostmaiamai
+        Me.Icon_lostmaiamai.Location = New System.Drawing.Point(184, 63)
+        Me.Icon_lostmaiamai.Name = "Icon_lostmaiamai"
+        Me.Icon_lostmaiamai.Size = New System.Drawing.Size(35, 35)
+        Me.Icon_lostmaiamai.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Icon_lostmaiamai.TabIndex = 412
+        Me.Icon_lostmaiamai.TabStop = False
         '
-        'PictureBox28
+        'Icon_rupee
         '
-        Me.PictureBox28.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_rupees
-        Me.PictureBox28.Location = New System.Drawing.Point(47, 63)
-        Me.PictureBox28.Name = "PictureBox28"
-        Me.PictureBox28.Size = New System.Drawing.Size(35, 35)
-        Me.PictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox28.TabIndex = 411
-        Me.PictureBox28.TabStop = False
+        Me.Icon_rupee.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_rupee.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_rupees
+        Me.Icon_rupee.Location = New System.Drawing.Point(47, 63)
+        Me.Icon_rupee.Name = "Icon_rupee"
+        Me.Icon_rupee.Size = New System.Drawing.Size(35, 35)
+        Me.Icon_rupee.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Icon_rupee.TabIndex = 411
+        Me.Icon_rupee.TabStop = False
         '
         'NumericUpDown41
         '
         Me.NumericUpDown41.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown41.Location = New System.Drawing.Point(503, 431)
+        Me.NumericUpDown41.Location = New System.Drawing.Point(503, 456)
         Me.NumericUpDown41.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.NumericUpDown41.Name = "NumericUpDown41"
         Me.NumericUpDown41.Size = New System.Drawing.Size(48, 16)
         Me.NumericUpDown41.TabIndex = 410
         Me.NumericUpDown41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown41.Visible = False
         '
         'PictureBox36
         '
-        Me.PictureBox36.Location = New System.Drawing.Point(503, 399)
+        Me.PictureBox36.Location = New System.Drawing.Point(503, 424)
         Me.PictureBox36.Name = "PictureBox36"
         Me.PictureBox36.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox36.TabIndex = 409
         Me.PictureBox36.TabStop = False
+        Me.PictureBox36.Visible = False
         '
         'NumericUpDown42
         '
         Me.NumericUpDown42.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown42.Location = New System.Drawing.Point(449, 431)
+        Me.NumericUpDown42.Location = New System.Drawing.Point(449, 456)
         Me.NumericUpDown42.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.NumericUpDown42.Name = "NumericUpDown42"
         Me.NumericUpDown42.Size = New System.Drawing.Size(48, 16)
         Me.NumericUpDown42.TabIndex = 408
         Me.NumericUpDown42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown42.Visible = False
         '
         'PictureBox37
         '
-        Me.PictureBox37.Location = New System.Drawing.Point(449, 399)
+        Me.PictureBox37.Location = New System.Drawing.Point(449, 424)
         Me.PictureBox37.Name = "PictureBox37"
         Me.PictureBox37.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox37.TabIndex = 407
         Me.PictureBox37.TabStop = False
+        Me.PictureBox37.Visible = False
         '
         'NumericUpDown43
         '
         Me.NumericUpDown43.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown43.Location = New System.Drawing.Point(395, 431)
+        Me.NumericUpDown43.Location = New System.Drawing.Point(395, 456)
         Me.NumericUpDown43.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.NumericUpDown43.Name = "NumericUpDown43"
         Me.NumericUpDown43.Size = New System.Drawing.Size(48, 16)
         Me.NumericUpDown43.TabIndex = 406
         Me.NumericUpDown43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown43.Visible = False
         '
         'PictureBox38
         '
-        Me.PictureBox38.Location = New System.Drawing.Point(395, 399)
+        Me.PictureBox38.Location = New System.Drawing.Point(395, 424)
         Me.PictureBox38.Name = "PictureBox38"
         Me.PictureBox38.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox38.TabIndex = 405
         Me.PictureBox38.TabStop = False
+        Me.PictureBox38.Visible = False
         '
         'NumericUpDown44
         '
         Me.NumericUpDown44.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown44.Location = New System.Drawing.Point(341, 431)
+        Me.NumericUpDown44.Location = New System.Drawing.Point(341, 456)
         Me.NumericUpDown44.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.NumericUpDown44.Name = "NumericUpDown44"
         Me.NumericUpDown44.Size = New System.Drawing.Size(48, 16)
         Me.NumericUpDown44.TabIndex = 404
         Me.NumericUpDown44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown44.Visible = False
         '
         'PictureBox39
         '
-        Me.PictureBox39.Location = New System.Drawing.Point(341, 399)
+        Me.PictureBox39.Location = New System.Drawing.Point(341, 424)
         Me.PictureBox39.Name = "PictureBox39"
         Me.PictureBox39.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox39.TabIndex = 403
         Me.PictureBox39.TabStop = False
+        Me.PictureBox39.Visible = False
         '
         'NumericUpDown45
         '
         Me.NumericUpDown45.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown45.Location = New System.Drawing.Point(287, 431)
+        Me.NumericUpDown45.Location = New System.Drawing.Point(287, 456)
         Me.NumericUpDown45.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.NumericUpDown45.Name = "NumericUpDown45"
         Me.NumericUpDown45.Size = New System.Drawing.Size(48, 16)
         Me.NumericUpDown45.TabIndex = 402
         Me.NumericUpDown45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown45.Visible = False
         '
         'PictureBox43
         '
-        Me.PictureBox43.Location = New System.Drawing.Point(287, 399)
+        Me.PictureBox43.Location = New System.Drawing.Point(287, 424)
         Me.PictureBox43.Name = "PictureBox43"
         Me.PictureBox43.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox43.TabIndex = 401
         Me.PictureBox43.TabStop = False
+        Me.PictureBox43.Visible = False
         '
         'NumericUpDown46
         '
         Me.NumericUpDown46.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown46.Location = New System.Drawing.Point(233, 431)
+        Me.NumericUpDown46.Location = New System.Drawing.Point(233, 456)
         Me.NumericUpDown46.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.NumericUpDown46.Name = "NumericUpDown46"
         Me.NumericUpDown46.Size = New System.Drawing.Size(48, 16)
         Me.NumericUpDown46.TabIndex = 400
         Me.NumericUpDown46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown46.Visible = False
         '
         'PictureBox44
         '
-        Me.PictureBox44.Location = New System.Drawing.Point(233, 399)
+        Me.PictureBox44.Location = New System.Drawing.Point(233, 424)
         Me.PictureBox44.Name = "PictureBox44"
         Me.PictureBox44.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox44.TabIndex = 399
         Me.PictureBox44.TabStop = False
+        Me.PictureBox44.Visible = False
         '
         'NumericUpDown47
         '
         Me.NumericUpDown47.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown47.Location = New System.Drawing.Point(179, 431)
+        Me.NumericUpDown47.Location = New System.Drawing.Point(179, 456)
         Me.NumericUpDown47.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.NumericUpDown47.Name = "NumericUpDown47"
         Me.NumericUpDown47.Size = New System.Drawing.Size(48, 16)
         Me.NumericUpDown47.TabIndex = 398
         Me.NumericUpDown47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown47.Visible = False
         '
         'PictureBox45
         '
-        Me.PictureBox45.Location = New System.Drawing.Point(179, 399)
+        Me.PictureBox45.Location = New System.Drawing.Point(179, 424)
         Me.PictureBox45.Name = "PictureBox45"
         Me.PictureBox45.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox45.TabIndex = 397
         Me.PictureBox45.TabStop = False
+        Me.PictureBox45.Visible = False
         '
         'NumericUpDown48
         '
         Me.NumericUpDown48.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown48.Location = New System.Drawing.Point(125, 431)
+        Me.NumericUpDown48.Location = New System.Drawing.Point(125, 456)
         Me.NumericUpDown48.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.NumericUpDown48.Name = "NumericUpDown48"
         Me.NumericUpDown48.Size = New System.Drawing.Size(48, 16)
         Me.NumericUpDown48.TabIndex = 396
         Me.NumericUpDown48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown48.Visible = False
         '
         'PictureBox46
         '
-        Me.PictureBox46.Location = New System.Drawing.Point(125, 399)
+        Me.PictureBox46.Location = New System.Drawing.Point(125, 424)
         Me.PictureBox46.Name = "PictureBox46"
         Me.PictureBox46.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox46.TabIndex = 395
         Me.PictureBox46.TabStop = False
+        Me.PictureBox46.Visible = False
         '
         'NumericUpDown49
         '
         Me.NumericUpDown49.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown49.Location = New System.Drawing.Point(503, 377)
+        Me.NumericUpDown49.Location = New System.Drawing.Point(503, 402)
         Me.NumericUpDown49.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.NumericUpDown49.Name = "NumericUpDown49"
         Me.NumericUpDown49.Size = New System.Drawing.Size(48, 16)
         Me.NumericUpDown49.TabIndex = 394
         Me.NumericUpDown49.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown49.Visible = False
         '
         'PictureBox47
         '
-        Me.PictureBox47.Location = New System.Drawing.Point(503, 345)
+        Me.PictureBox47.Location = New System.Drawing.Point(503, 370)
         Me.PictureBox47.Name = "PictureBox47"
         Me.PictureBox47.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox47.TabIndex = 393
         Me.PictureBox47.TabStop = False
+        Me.PictureBox47.Visible = False
         '
         'NumericUpDown50
         '
         Me.NumericUpDown50.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown50.Location = New System.Drawing.Point(449, 377)
+        Me.NumericUpDown50.Location = New System.Drawing.Point(449, 402)
         Me.NumericUpDown50.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.NumericUpDown50.Name = "NumericUpDown50"
         Me.NumericUpDown50.Size = New System.Drawing.Size(48, 16)
         Me.NumericUpDown50.TabIndex = 392
         Me.NumericUpDown50.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown50.Visible = False
         '
         'PictureBox48
         '
-        Me.PictureBox48.Location = New System.Drawing.Point(449, 345)
+        Me.PictureBox48.Location = New System.Drawing.Point(449, 370)
         Me.PictureBox48.Name = "PictureBox48"
         Me.PictureBox48.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox48.TabIndex = 391
         Me.PictureBox48.TabStop = False
+        Me.PictureBox48.Visible = False
         '
         'NumericUpDown51
         '
         Me.NumericUpDown51.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown51.Location = New System.Drawing.Point(395, 377)
+        Me.NumericUpDown51.Location = New System.Drawing.Point(395, 402)
         Me.NumericUpDown51.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.NumericUpDown51.Name = "NumericUpDown51"
         Me.NumericUpDown51.Size = New System.Drawing.Size(48, 16)
         Me.NumericUpDown51.TabIndex = 390
         Me.NumericUpDown51.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown51.Visible = False
         '
         'PictureBox49
         '
-        Me.PictureBox49.Location = New System.Drawing.Point(395, 345)
+        Me.PictureBox49.Location = New System.Drawing.Point(395, 370)
         Me.PictureBox49.Name = "PictureBox49"
         Me.PictureBox49.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox49.TabIndex = 389
         Me.PictureBox49.TabStop = False
+        Me.PictureBox49.Visible = False
         '
         'NumericUpDown52
         '
         Me.NumericUpDown52.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown52.Location = New System.Drawing.Point(341, 377)
+        Me.NumericUpDown52.Location = New System.Drawing.Point(341, 402)
         Me.NumericUpDown52.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.NumericUpDown52.Name = "NumericUpDown52"
         Me.NumericUpDown52.Size = New System.Drawing.Size(48, 16)
         Me.NumericUpDown52.TabIndex = 388
         Me.NumericUpDown52.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown52.Visible = False
         '
         'PictureBox50
         '
-        Me.PictureBox50.Location = New System.Drawing.Point(341, 345)
+        Me.PictureBox50.Location = New System.Drawing.Point(341, 370)
         Me.PictureBox50.Name = "PictureBox50"
         Me.PictureBox50.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox50.TabIndex = 387
         Me.PictureBox50.TabStop = False
+        Me.PictureBox50.Visible = False
         '
         'NumericUpDown53
         '
         Me.NumericUpDown53.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown53.Location = New System.Drawing.Point(287, 377)
+        Me.NumericUpDown53.Location = New System.Drawing.Point(287, 402)
         Me.NumericUpDown53.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.NumericUpDown53.Name = "NumericUpDown53"
         Me.NumericUpDown53.Size = New System.Drawing.Size(48, 16)
         Me.NumericUpDown53.TabIndex = 386
         Me.NumericUpDown53.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown53.Visible = False
         '
         'PictureBox51
         '
-        Me.PictureBox51.Location = New System.Drawing.Point(287, 345)
+        Me.PictureBox51.Location = New System.Drawing.Point(287, 370)
         Me.PictureBox51.Name = "PictureBox51"
         Me.PictureBox51.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox51.TabIndex = 385
         Me.PictureBox51.TabStop = False
+        Me.PictureBox51.Visible = False
         '
         'NumericUpDown54
         '
         Me.NumericUpDown54.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown54.Location = New System.Drawing.Point(233, 377)
+        Me.NumericUpDown54.Location = New System.Drawing.Point(233, 402)
         Me.NumericUpDown54.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.NumericUpDown54.Name = "NumericUpDown54"
         Me.NumericUpDown54.Size = New System.Drawing.Size(48, 16)
         Me.NumericUpDown54.TabIndex = 384
         Me.NumericUpDown54.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown54.Visible = False
         '
         'PictureBox52
         '
-        Me.PictureBox52.Location = New System.Drawing.Point(233, 345)
+        Me.PictureBox52.Location = New System.Drawing.Point(233, 370)
         Me.PictureBox52.Name = "PictureBox52"
         Me.PictureBox52.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox52.TabIndex = 383
         Me.PictureBox52.TabStop = False
+        Me.PictureBox52.Visible = False
         '
         'NumericUpDown55
         '
         Me.NumericUpDown55.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown55.Location = New System.Drawing.Point(179, 377)
+        Me.NumericUpDown55.Location = New System.Drawing.Point(179, 402)
         Me.NumericUpDown55.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.NumericUpDown55.Name = "NumericUpDown55"
         Me.NumericUpDown55.Size = New System.Drawing.Size(48, 16)
         Me.NumericUpDown55.TabIndex = 382
         Me.NumericUpDown55.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown55.Visible = False
         '
         'PictureBox53
         '
-        Me.PictureBox53.Location = New System.Drawing.Point(179, 345)
+        Me.PictureBox53.Location = New System.Drawing.Point(179, 370)
         Me.PictureBox53.Name = "PictureBox53"
         Me.PictureBox53.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox53.TabIndex = 381
         Me.PictureBox53.TabStop = False
+        Me.PictureBox53.Visible = False
         '
         'NumericUpDown56
         '
         Me.NumericUpDown56.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown56.Location = New System.Drawing.Point(125, 377)
+        Me.NumericUpDown56.Location = New System.Drawing.Point(125, 402)
         Me.NumericUpDown56.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.NumericUpDown56.Name = "NumericUpDown56"
         Me.NumericUpDown56.Size = New System.Drawing.Size(48, 16)
         Me.NumericUpDown56.TabIndex = 380
         Me.NumericUpDown56.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown56.Visible = False
         '
         'PictureBox54
         '
-        Me.PictureBox54.Location = New System.Drawing.Point(125, 345)
+        Me.PictureBox54.Location = New System.Drawing.Point(125, 370)
         Me.PictureBox54.Name = "PictureBox54"
         Me.PictureBox54.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox54.TabIndex = 379
         Me.PictureBox54.TabStop = False
+        Me.PictureBox54.Visible = False
         '
         'NumericUpDown25
         '
         Me.NumericUpDown25.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown25.Location = New System.Drawing.Point(503, 323)
+        Me.NumericUpDown25.Location = New System.Drawing.Point(503, 348)
         Me.NumericUpDown25.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.NumericUpDown25.Name = "NumericUpDown25"
         Me.NumericUpDown25.Size = New System.Drawing.Size(48, 16)
         Me.NumericUpDown25.TabIndex = 378
         Me.NumericUpDown25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown25.Visible = False
         '
         'PictureBox20
         '
-        Me.PictureBox20.Location = New System.Drawing.Point(503, 291)
+        Me.PictureBox20.Location = New System.Drawing.Point(503, 316)
         Me.PictureBox20.Name = "PictureBox20"
         Me.PictureBox20.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox20.TabIndex = 377
         Me.PictureBox20.TabStop = False
+        Me.PictureBox20.Visible = False
         '
         'NumericUpDown26
         '
         Me.NumericUpDown26.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown26.Location = New System.Drawing.Point(449, 323)
+        Me.NumericUpDown26.Location = New System.Drawing.Point(449, 348)
         Me.NumericUpDown26.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.NumericUpDown26.Name = "NumericUpDown26"
         Me.NumericUpDown26.Size = New System.Drawing.Size(48, 16)
         Me.NumericUpDown26.TabIndex = 376
         Me.NumericUpDown26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown26.Visible = False
         '
         'PictureBox21
         '
-        Me.PictureBox21.Location = New System.Drawing.Point(449, 291)
+        Me.PictureBox21.Location = New System.Drawing.Point(449, 316)
         Me.PictureBox21.Name = "PictureBox21"
         Me.PictureBox21.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox21.TabIndex = 375
         Me.PictureBox21.TabStop = False
+        Me.PictureBox21.Visible = False
         '
         'NumericUpDown27
         '
         Me.NumericUpDown27.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown27.Location = New System.Drawing.Point(395, 323)
+        Me.NumericUpDown27.Location = New System.Drawing.Point(395, 348)
         Me.NumericUpDown27.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.NumericUpDown27.Name = "NumericUpDown27"
         Me.NumericUpDown27.Size = New System.Drawing.Size(48, 16)
         Me.NumericUpDown27.TabIndex = 374
         Me.NumericUpDown27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown27.Visible = False
         '
         'PictureBox22
         '
-        Me.PictureBox22.Location = New System.Drawing.Point(395, 291)
+        Me.PictureBox22.Location = New System.Drawing.Point(395, 316)
         Me.PictureBox22.Name = "PictureBox22"
         Me.PictureBox22.Size = New System.Drawing.Size(48, 48)
         Me.PictureBox22.TabIndex = 373
         Me.PictureBox22.TabStop = False
+        Me.PictureBox22.Visible = False
         '
-        'NumericUpDown28
+        'valu_bottleitem_5
         '
-        Me.NumericUpDown28.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown28.Location = New System.Drawing.Point(341, 323)
-        Me.NumericUpDown28.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.NumericUpDown28.Name = "NumericUpDown28"
-        Me.NumericUpDown28.Size = New System.Drawing.Size(48, 16)
-        Me.NumericUpDown28.TabIndex = 372
-        Me.NumericUpDown28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_bottleitem_5.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_bottleitem_5.Location = New System.Drawing.Point(557, 262)
+        Me.valu_bottleitem_5.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.valu_bottleitem_5.Name = "valu_bottleitem_5"
+        Me.valu_bottleitem_5.Size = New System.Drawing.Size(48, 16)
+        Me.valu_bottleitem_5.TabIndex = 372
+        Me.valu_bottleitem_5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_bottleitem_5.Visible = False
         '
-        'PictureBox23
+        'Icon_bottleitem_5
         '
-        Me.PictureBox23.Location = New System.Drawing.Point(341, 291)
-        Me.PictureBox23.Name = "PictureBox23"
-        Me.PictureBox23.Size = New System.Drawing.Size(48, 48)
-        Me.PictureBox23.TabIndex = 371
-        Me.PictureBox23.TabStop = False
+        Me.Icon_bottleitem_5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_bottleitem_5.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.bottle_empty
+        Me.Icon_bottleitem_5.Location = New System.Drawing.Point(557, 230)
+        Me.Icon_bottleitem_5.Name = "Icon_bottleitem_5"
+        Me.Icon_bottleitem_5.Size = New System.Drawing.Size(48, 48)
+        Me.Icon_bottleitem_5.TabIndex = 371
+        Me.Icon_bottleitem_5.TabStop = False
+        Me.Icon_bottleitem_5.Visible = False
         '
-        'NumericUpDown29
+        'valu_bottleitem_4
         '
-        Me.NumericUpDown29.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown29.Location = New System.Drawing.Point(287, 323)
-        Me.NumericUpDown29.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.NumericUpDown29.Name = "NumericUpDown29"
-        Me.NumericUpDown29.Size = New System.Drawing.Size(48, 16)
-        Me.NumericUpDown29.TabIndex = 370
-        Me.NumericUpDown29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_bottleitem_4.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_bottleitem_4.Location = New System.Drawing.Point(503, 262)
+        Me.valu_bottleitem_4.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.valu_bottleitem_4.Name = "valu_bottleitem_4"
+        Me.valu_bottleitem_4.Size = New System.Drawing.Size(48, 16)
+        Me.valu_bottleitem_4.TabIndex = 370
+        Me.valu_bottleitem_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_bottleitem_4.Visible = False
         '
-        'PictureBox24
+        'Icon_bottleitem_4
         '
-        Me.PictureBox24.Location = New System.Drawing.Point(287, 291)
-        Me.PictureBox24.Name = "PictureBox24"
-        Me.PictureBox24.Size = New System.Drawing.Size(48, 48)
-        Me.PictureBox24.TabIndex = 369
-        Me.PictureBox24.TabStop = False
+        Me.Icon_bottleitem_4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_bottleitem_4.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.bottle_empty
+        Me.Icon_bottleitem_4.Location = New System.Drawing.Point(503, 230)
+        Me.Icon_bottleitem_4.Name = "Icon_bottleitem_4"
+        Me.Icon_bottleitem_4.Size = New System.Drawing.Size(48, 48)
+        Me.Icon_bottleitem_4.TabIndex = 369
+        Me.Icon_bottleitem_4.TabStop = False
+        Me.Icon_bottleitem_4.Visible = False
         '
-        'NumericUpDown30
+        'valu_bottleitem_3
         '
-        Me.NumericUpDown30.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown30.Location = New System.Drawing.Point(233, 323)
-        Me.NumericUpDown30.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.NumericUpDown30.Name = "NumericUpDown30"
-        Me.NumericUpDown30.Size = New System.Drawing.Size(48, 16)
-        Me.NumericUpDown30.TabIndex = 368
-        Me.NumericUpDown30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_bottleitem_3.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_bottleitem_3.Location = New System.Drawing.Point(449, 262)
+        Me.valu_bottleitem_3.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.valu_bottleitem_3.Name = "valu_bottleitem_3"
+        Me.valu_bottleitem_3.Size = New System.Drawing.Size(48, 16)
+        Me.valu_bottleitem_3.TabIndex = 368
+        Me.valu_bottleitem_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_bottleitem_3.Visible = False
         '
-        'PictureBox25
+        'Icon_bottleitem_3
         '
-        Me.PictureBox25.Location = New System.Drawing.Point(233, 291)
-        Me.PictureBox25.Name = "PictureBox25"
-        Me.PictureBox25.Size = New System.Drawing.Size(48, 48)
-        Me.PictureBox25.TabIndex = 367
-        Me.PictureBox25.TabStop = False
+        Me.Icon_bottleitem_3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_bottleitem_3.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.bottle_empty
+        Me.Icon_bottleitem_3.Location = New System.Drawing.Point(449, 230)
+        Me.Icon_bottleitem_3.Name = "Icon_bottleitem_3"
+        Me.Icon_bottleitem_3.Size = New System.Drawing.Size(48, 48)
+        Me.Icon_bottleitem_3.TabIndex = 367
+        Me.Icon_bottleitem_3.TabStop = False
+        Me.Icon_bottleitem_3.Visible = False
         '
-        'NumericUpDown31
+        'valu_bottleitem_2
         '
-        Me.NumericUpDown31.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown31.Location = New System.Drawing.Point(179, 323)
-        Me.NumericUpDown31.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.NumericUpDown31.Name = "NumericUpDown31"
-        Me.NumericUpDown31.Size = New System.Drawing.Size(48, 16)
-        Me.NumericUpDown31.TabIndex = 366
-        Me.NumericUpDown31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_bottleitem_2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_bottleitem_2.Location = New System.Drawing.Point(395, 262)
+        Me.valu_bottleitem_2.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.valu_bottleitem_2.Name = "valu_bottleitem_2"
+        Me.valu_bottleitem_2.Size = New System.Drawing.Size(48, 16)
+        Me.valu_bottleitem_2.TabIndex = 366
+        Me.valu_bottleitem_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_bottleitem_2.Visible = False
         '
-        'PictureBox26
+        'Icon_bottleitem_2
         '
-        Me.PictureBox26.Location = New System.Drawing.Point(179, 291)
-        Me.PictureBox26.Name = "PictureBox26"
-        Me.PictureBox26.Size = New System.Drawing.Size(48, 48)
-        Me.PictureBox26.TabIndex = 365
-        Me.PictureBox26.TabStop = False
+        Me.Icon_bottleitem_2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_bottleitem_2.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.bottle_empty
+        Me.Icon_bottleitem_2.Location = New System.Drawing.Point(395, 230)
+        Me.Icon_bottleitem_2.Name = "Icon_bottleitem_2"
+        Me.Icon_bottleitem_2.Size = New System.Drawing.Size(48, 48)
+        Me.Icon_bottleitem_2.TabIndex = 365
+        Me.Icon_bottleitem_2.TabStop = False
+        Me.Icon_bottleitem_2.Visible = False
         '
-        'NumericUpDown32
+        'valu_bottleitem_1
         '
-        Me.NumericUpDown32.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown32.Location = New System.Drawing.Point(125, 323)
-        Me.NumericUpDown32.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.NumericUpDown32.Name = "NumericUpDown32"
-        Me.NumericUpDown32.Size = New System.Drawing.Size(48, 16)
-        Me.NumericUpDown32.TabIndex = 364
-        Me.NumericUpDown32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_bottleitem_1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_bottleitem_1.Location = New System.Drawing.Point(341, 262)
+        Me.valu_bottleitem_1.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.valu_bottleitem_1.Name = "valu_bottleitem_1"
+        Me.valu_bottleitem_1.Size = New System.Drawing.Size(48, 16)
+        Me.valu_bottleitem_1.TabIndex = 364
+        Me.valu_bottleitem_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_bottleitem_1.Visible = False
         '
-        'PictureBox27
+        'Icon_bottleitem_1
         '
-        Me.PictureBox27.Location = New System.Drawing.Point(125, 291)
-        Me.PictureBox27.Name = "PictureBox27"
-        Me.PictureBox27.Size = New System.Drawing.Size(48, 48)
-        Me.PictureBox27.TabIndex = 363
-        Me.PictureBox27.TabStop = False
+        Me.Icon_bottleitem_1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_bottleitem_1.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.bottle_empty
+        Me.Icon_bottleitem_1.Location = New System.Drawing.Point(341, 230)
+        Me.Icon_bottleitem_1.Name = "Icon_bottleitem_1"
+        Me.Icon_bottleitem_1.Size = New System.Drawing.Size(48, 48)
+        Me.Icon_bottleitem_1.TabIndex = 363
+        Me.Icon_bottleitem_1.TabStop = False
+        Me.Icon_bottleitem_1.Visible = False
         '
         'valu_net
         '
@@ -2462,7 +2465,8 @@ Partial Class Form1
         '
         'Icon_net
         '
-        Me.Icon_net.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_net
+        Me.Icon_net.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_net.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_net_unavailable
         Me.Icon_net.Location = New System.Drawing.Point(125, 177)
         Me.Icon_net.Name = "Icon_net"
         Me.Icon_net.Size = New System.Drawing.Size(48, 48)
@@ -2481,7 +2485,8 @@ Partial Class Form1
         '
         'Icon_lamp
         '
-        Me.Icon_lamp.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_lamp
+        Me.Icon_lamp.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_lamp.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_lamp_unavailable
         Me.Icon_lamp.Location = New System.Drawing.Point(71, 177)
         Me.Icon_lamp.Name = "Icon_lamp"
         Me.Icon_lamp.Size = New System.Drawing.Size(48, 48)
@@ -2500,7 +2505,8 @@ Partial Class Form1
         '
         'Icon_boomerang
         '
-        Me.Icon_boomerang.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_boomerang
+        Me.Icon_boomerang.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_boomerang.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_boomerang_unavailable
         Me.Icon_boomerang.Location = New System.Drawing.Point(125, 123)
         Me.Icon_boomerang.Name = "Icon_boomerang"
         Me.Icon_boomerang.Size = New System.Drawing.Size(48, 48)
@@ -2519,7 +2525,8 @@ Partial Class Form1
         '
         'Icon_bombs
         '
-        Me.Icon_bombs.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_bombs
+        Me.Icon_bombs.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_bombs.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_bombs_unavailable
         Me.Icon_bombs.Location = New System.Drawing.Point(71, 123)
         Me.Icon_bombs.Name = "Icon_bombs"
         Me.Icon_bombs.Size = New System.Drawing.Size(48, 48)
@@ -2538,7 +2545,8 @@ Partial Class Form1
         '
         'Icon_bottle5
         '
-        Me.Icon_bottle5.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_bottles
+        Me.Icon_bottle5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_bottle5.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_bottles_unavailable
         Me.Icon_bottle5.Location = New System.Drawing.Point(557, 177)
         Me.Icon_bottle5.Name = "Icon_bottle5"
         Me.Icon_bottle5.Size = New System.Drawing.Size(48, 48)
@@ -2558,7 +2566,8 @@ Partial Class Form1
         '
         'Icon_bottle4
         '
-        Me.Icon_bottle4.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_bottles
+        Me.Icon_bottle4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_bottle4.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_bottles_unavailable
         Me.Icon_bottle4.Location = New System.Drawing.Point(503, 177)
         Me.Icon_bottle4.Name = "Icon_bottle4"
         Me.Icon_bottle4.Size = New System.Drawing.Size(48, 48)
@@ -2577,7 +2586,8 @@ Partial Class Form1
         '
         'Icon_bottle3
         '
-        Me.Icon_bottle3.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_bottles
+        Me.Icon_bottle3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_bottle3.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_bottles_unavailable
         Me.Icon_bottle3.Location = New System.Drawing.Point(449, 177)
         Me.Icon_bottle3.Name = "Icon_bottle3"
         Me.Icon_bottle3.Size = New System.Drawing.Size(48, 48)
@@ -2596,7 +2606,8 @@ Partial Class Form1
         '
         'Icon_bottle2
         '
-        Me.Icon_bottle2.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_bottles
+        Me.Icon_bottle2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_bottle2.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_bottles_unavailable
         Me.Icon_bottle2.Location = New System.Drawing.Point(395, 177)
         Me.Icon_bottle2.Name = "Icon_bottle2"
         Me.Icon_bottle2.Size = New System.Drawing.Size(48, 48)
@@ -2615,7 +2626,8 @@ Partial Class Form1
         '
         'Icon_bottle1
         '
-        Me.Icon_bottle1.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_bottles
+        Me.Icon_bottle1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_bottle1.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_bottles_unavailable
         Me.Icon_bottle1.Location = New System.Drawing.Point(341, 177)
         Me.Icon_bottle1.Name = "Icon_bottle1"
         Me.Icon_bottle1.Size = New System.Drawing.Size(48, 48)
@@ -2634,7 +2646,8 @@ Partial Class Form1
         '
         'Icon_foulfruit
         '
-        Me.Icon_foulfruit.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_foulfruit
+        Me.Icon_foulfruit.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_foulfruit.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_foulfruit_unavailable
         Me.Icon_foulfruit.Location = New System.Drawing.Point(287, 177)
         Me.Icon_foulfruit.Name = "Icon_foulfruit"
         Me.Icon_foulfruit.Size = New System.Drawing.Size(48, 48)
@@ -2653,7 +2666,8 @@ Partial Class Form1
         '
         'Icon_scootfruit
         '
-        Me.Icon_scootfruit.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_scootfruit
+        Me.Icon_scootfruit.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_scootfruit.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_scootfruit_unavailable
         Me.Icon_scootfruit.Location = New System.Drawing.Point(233, 177)
         Me.Icon_scootfruit.Name = "Icon_scootfruit"
         Me.Icon_scootfruit.Size = New System.Drawing.Size(48, 48)
@@ -2672,7 +2686,8 @@ Partial Class Form1
         '
         'Icon_hintglasses
         '
-        Me.Icon_hintglasses.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_hintglasses
+        Me.Icon_hintglasses.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_hintglasses.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_hintglasses_unavailable
         Me.Icon_hintglasses.Location = New System.Drawing.Point(179, 177)
         Me.Icon_hintglasses.Name = "Icon_hintglasses"
         Me.Icon_hintglasses.Size = New System.Drawing.Size(48, 48)
@@ -2691,7 +2706,8 @@ Partial Class Form1
         '
         'Icon_hookshot
         '
-        Me.Icon_hookshot.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_hookshot
+        Me.Icon_hookshot.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_hookshot.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_hookshot_unavailable
         Me.Icon_hookshot.Location = New System.Drawing.Point(557, 123)
         Me.Icon_hookshot.Name = "Icon_hookshot"
         Me.Icon_hookshot.Size = New System.Drawing.Size(48, 48)
@@ -2711,7 +2727,8 @@ Partial Class Form1
         '
         'Icon_tornadorod
         '
-        Me.Icon_tornadorod.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_tornadorod
+        Me.Icon_tornadorod.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_tornadorod.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_tornadorod_unavailable
         Me.Icon_tornadorod.Location = New System.Drawing.Point(503, 123)
         Me.Icon_tornadorod.Name = "Icon_tornadorod"
         Me.Icon_tornadorod.Size = New System.Drawing.Size(48, 48)
@@ -2730,7 +2747,8 @@ Partial Class Form1
         '
         'Icon_icerod
         '
-        Me.Icon_icerod.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_icerod
+        Me.Icon_icerod.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_icerod.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_icerod_unavailable
         Me.Icon_icerod.Location = New System.Drawing.Point(449, 123)
         Me.Icon_icerod.Name = "Icon_icerod"
         Me.Icon_icerod.Size = New System.Drawing.Size(48, 48)
@@ -2749,7 +2767,8 @@ Partial Class Form1
         '
         'Icon_firerod
         '
-        Me.Icon_firerod.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_firerod
+        Me.Icon_firerod.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_firerod.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_firerod_unavailable
         Me.Icon_firerod.Location = New System.Drawing.Point(395, 123)
         Me.Icon_firerod.Name = "Icon_firerod"
         Me.Icon_firerod.Size = New System.Drawing.Size(48, 48)
@@ -2768,7 +2787,8 @@ Partial Class Form1
         '
         'Icon_sandrod
         '
-        Me.Icon_sandrod.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_sandrod
+        Me.Icon_sandrod.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_sandrod.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_sandrod_unavailable
         Me.Icon_sandrod.Location = New System.Drawing.Point(341, 123)
         Me.Icon_sandrod.Name = "Icon_sandrod"
         Me.Icon_sandrod.Size = New System.Drawing.Size(48, 48)
@@ -2787,7 +2807,8 @@ Partial Class Form1
         '
         'Icon_hammer
         '
-        Me.Icon_hammer.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_hammer
+        Me.Icon_hammer.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_hammer.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_hammer_unavailable
         Me.Icon_hammer.Location = New System.Drawing.Point(287, 123)
         Me.Icon_hammer.Name = "Icon_hammer"
         Me.Icon_hammer.Size = New System.Drawing.Size(48, 48)
@@ -2806,7 +2827,8 @@ Partial Class Form1
         '
         'Icon_bowoflight
         '
-        Me.Icon_bowoflight.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_bowoflight
+        Me.Icon_bowoflight.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_bowoflight.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_bowoflight_unavailable
         Me.Icon_bowoflight.Location = New System.Drawing.Point(233, 123)
         Me.Icon_bowoflight.Name = "Icon_bowoflight"
         Me.Icon_bowoflight.Size = New System.Drawing.Size(48, 48)
@@ -2825,12 +2847,33 @@ Partial Class Form1
         '
         'Icon_bow
         '
-        Me.Icon_bow.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_bow
+        Me.Icon_bow.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_bow.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_bow_unavailable
         Me.Icon_bow.Location = New System.Drawing.Point(179, 123)
         Me.Icon_bow.Name = "Icon_bow"
         Me.Icon_bow.Size = New System.Drawing.Size(48, 48)
         Me.Icon_bow.TabIndex = 311
         Me.Icon_bow.TabStop = False
+        '
+        'Panel_description
+        '
+        Me.Panel_description.BackgroundImage = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.bg_menu
+        Me.Panel_description.Controls.Add(Me.Text_description)
+        Me.Panel_description.Location = New System.Drawing.Point(150, 618)
+        Me.Panel_description.Name = "Panel_description"
+        Me.Panel_description.Size = New System.Drawing.Size(680, 32)
+        Me.Panel_description.TabIndex = 320
+        '
+        'Text_description
+        '
+        Me.Text_description.BackColor = System.Drawing.Color.Transparent
+        Me.Text_description.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_description.ForeColor = System.Drawing.Color.White
+        Me.Text_description.Location = New System.Drawing.Point(0, 0)
+        Me.Text_description.Name = "Text_description"
+        Me.Text_description.Size = New System.Drawing.Size(680, 32)
+        Me.Text_description.TabIndex = 341
+        Me.Text_description.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Form1
         '
@@ -2840,11 +2883,12 @@ Partial Class Form1
         Me.BackgroundImage = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.bg_betwse
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(830, 650)
+        Me.Controls.Add(Me.Panel_description)
         Me.Controls.Add(Me.Menu_panel)
         Me.Controls.Add(Me.TLSE_header)
         Me.Controls.Add(Me.TLSE_logo_update)
-        Me.Controls.Add(Me.Panel_linkstatus)
         Me.Controls.Add(Me.Panel_inventory)
+        Me.Controls.Add(Me.Panel_linkstatus)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -2874,7 +2918,6 @@ Partial Class Form1
         CType(Me.valu_ruppe, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_lostmaiamai, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_monstertail, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_monstergust, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_monsterhorn, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Menu_panel.ResumeLayout(False)
@@ -2901,8 +2944,6 @@ Partial Class Form1
         Me.Panel_linkstatus.ResumeLayout(False)
         Me.Panel_linkstatus.PerformLayout()
         CType(Me.valu_sector, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_actualworld, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_maxhearts, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2948,12 +2989,11 @@ Partial Class Form1
         CType(Me.Icon_currentheart_2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_currentheart_1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_inventory.ResumeLayout(False)
-        Me.Panel_inventory.PerformLayout()
-        CType(Me.PictureBox55, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_monstergust, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_monsterhorn, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_monstertail, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_lostmaiamai, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_rupee, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown41, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown42, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2992,16 +3032,16 @@ Partial Class Form1
         CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown27, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown28, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown29, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown30, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown31, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown32, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_bottleitem_5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_bottleitem_5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_bottleitem_4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_bottleitem_4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_bottleitem_3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_bottleitem_3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_bottleitem_2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_bottleitem_2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_bottleitem_1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_bottleitem_1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_net, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_net, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_lamp, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3042,6 +3082,7 @@ Partial Class Form1
         CType(Me.Icon_bowoflight, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_bow, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_bow, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel_description.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -3106,10 +3147,8 @@ Partial Class Form1
     Friend WithEvents valu_ruppe As NumericUpDown
     Friend WithEvents valu_lostmaiamai As NumericUpDown
     Friend WithEvents valu_monstertail As NumericUpDown
-    Friend WithEvents NumericUpDown4 As NumericUpDown
     Friend WithEvents valu_monstergust As NumericUpDown
     Friend WithEvents valu_monsterhorn As NumericUpDown
-    Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Text_crc32_z1reflet As TextBox
     Friend WithEvents Menu_storymap As Panel
@@ -3163,16 +3202,12 @@ Partial Class Form1
     Friend WithEvents Icon_maxheart_1 As PictureBox
     Friend WithEvents valu_maxhearts As NumericUpDown
     Friend WithEvents valu_currenthearts As NumericUpDown
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents TextBox3 As TextBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label9 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents valu_actualworld As NumericUpDown
     Friend WithEvents Select_actualworld As ComboBox
     Friend WithEvents Icon_bow As PictureBox
-    Friend WithEvents NumericUpDown9 As NumericUpDown
-    Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents NumericUpDown41 As NumericUpDown
     Friend WithEvents PictureBox36 As PictureBox
     Friend WithEvents NumericUpDown42 As NumericUpDown
@@ -3211,16 +3246,16 @@ Partial Class Form1
     Friend WithEvents PictureBox21 As PictureBox
     Friend WithEvents NumericUpDown27 As NumericUpDown
     Friend WithEvents PictureBox22 As PictureBox
-    Friend WithEvents NumericUpDown28 As NumericUpDown
-    Friend WithEvents PictureBox23 As PictureBox
-    Friend WithEvents NumericUpDown29 As NumericUpDown
-    Friend WithEvents PictureBox24 As PictureBox
-    Friend WithEvents NumericUpDown30 As NumericUpDown
-    Friend WithEvents PictureBox25 As PictureBox
-    Friend WithEvents NumericUpDown31 As NumericUpDown
-    Friend WithEvents PictureBox26 As PictureBox
-    Friend WithEvents NumericUpDown32 As NumericUpDown
-    Friend WithEvents PictureBox27 As PictureBox
+    Friend WithEvents valu_bottleitem_5 As NumericUpDown
+    Friend WithEvents Icon_bottleitem_5 As PictureBox
+    Friend WithEvents valu_bottleitem_4 As NumericUpDown
+    Friend WithEvents Icon_bottleitem_4 As PictureBox
+    Friend WithEvents valu_bottleitem_3 As NumericUpDown
+    Friend WithEvents Icon_bottleitem_3 As PictureBox
+    Friend WithEvents valu_bottleitem_2 As NumericUpDown
+    Friend WithEvents Icon_bottleitem_2 As PictureBox
+    Friend WithEvents valu_bottleitem_1 As NumericUpDown
+    Friend WithEvents Icon_bottleitem_1 As PictureBox
     Friend WithEvents valu_net As NumericUpDown
     Friend WithEvents Icon_net As PictureBox
     Friend WithEvents valu_lamp As NumericUpDown
@@ -3260,10 +3295,12 @@ Partial Class Form1
     Friend WithEvents valu_bowoflight As NumericUpDown
     Friend WithEvents Icon_bowoflight As PictureBox
     Friend WithEvents valu_bow As NumericUpDown
-    Friend WithEvents PictureBox55 As PictureBox
-    Friend WithEvents PictureBox31 As PictureBox
-    Friend WithEvents PictureBox30 As PictureBox
-    Friend WithEvents PictureBox29 As PictureBox
-    Friend WithEvents PictureBox28 As PictureBox
+    Friend WithEvents Icon_monstergust As PictureBox
+    Friend WithEvents Icon_monsterhorn As PictureBox
+    Friend WithEvents Icon_monstertail As PictureBox
+    Friend WithEvents Icon_lostmaiamai As PictureBox
+    Friend WithEvents Icon_rupee As PictureBox
     Friend WithEvents valu_sector As NumericUpDown
+    Friend WithEvents Panel_description As Panel
+    Friend WithEvents Text_description As Label
 End Class

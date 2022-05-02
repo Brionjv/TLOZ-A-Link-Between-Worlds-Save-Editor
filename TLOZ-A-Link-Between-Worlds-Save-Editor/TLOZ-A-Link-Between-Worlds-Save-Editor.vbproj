@@ -101,6 +101,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ZBWSE_dialog.Designer.vb">
+      <DependentUpon>ZBWSE_dialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ZBWSE_dialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -111,6 +117,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZBWSE_dialog.resx">
+      <DependentUpon>ZBWSE_dialog.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -127,6 +136,58 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <None Include="Resources\icon_description.png" />
+    <None Include="Resources\icon_unusword.png" />
+    <None Include="Resources\icon_tornadorod_rented.png" />
+    <None Include="Resources\icon_tornadorod_nice.png" />
+    <None Include="Resources\icon_sandrod_rented.png" />
+    <None Include="Resources\icon_sandrod_nice.png" />
+    <None Include="Resources\icon_net_nice.png" />
+    <None Include="Resources\icon_lamp_nice.png" />
+    <None Include="Resources\icon_icerod_rented.png" />
+    <None Include="Resources\icon_icerod_nice.png" />
+    <None Include="Resources\icon_hookshot_rented.png" />
+    <None Include="Resources\icon_hookshot_nice.png" />
+    <None Include="Resources\icon_hammer_rented.png" />
+    <None Include="Resources\icon_hammer_nice.png" />
+    <None Include="Resources\icon_firerod_rented.png" />
+    <None Include="Resources\icon_firerod_nice.png" />
+    <None Include="Resources\icon_bow_rented.png" />
+    <None Include="Resources\icon_bow_nice.png" />
+    <None Include="Resources\icon_boomerang_rented.png" />
+    <None Include="Resources\icon_boomerang_nice.png" />
+    <None Include="Resources\icon_bombs_rented.png" />
+    <None Include="Resources\icon_bombs_nice.png" />
+    <None Include="Resources\bottle_yellowpotion.png" />
+    <None Include="Resources\bottle_redpotion.png" />
+    <None Include="Resources\bottle_purplepotion.png" />
+    <None Include="Resources\bottle_premiummilk.png" />
+    <None Include="Resources\bottle_milk.png" />
+    <None Include="Resources\bottle_letter.png" />
+    <None Include="Resources\bottle_heart.png" />
+    <None Include="Resources\bottle_greenapple.png" />
+    <None Include="Resources\bottle_goldenbee.png" />
+    <None Include="Resources\bottle_fairy.png" />
+    <None Include="Resources\bottle_empty.png" />
+    <None Include="Resources\bottle_bluepotion.png" />
+    <None Include="Resources\bottle_bee.png" />
+    <None Include="Resources\bottle_apple.png" />
+    <None Include="Resources\icon_tornadorod_unavailable.png" />
+    <None Include="Resources\icon_scootfruit_unavailable.png" />
+    <None Include="Resources\icon_sandrod_unavailable.png" />
+    <None Include="Resources\icon_net_unavailable.png" />
+    <None Include="Resources\icon_lamp_unavailable.png" />
+    <None Include="Resources\icon_icerod_unavailable.png" />
+    <None Include="Resources\icon_hookshot_unavailable.png" />
+    <None Include="Resources\icon_hintglasses_unavailable.png" />
+    <None Include="Resources\icon_hammer_unavailable.png" />
+    <None Include="Resources\icon_foulfruit_unavailable.png" />
+    <None Include="Resources\icon_firerod_unavailable.png" />
+    <None Include="Resources\icon_bowoflight_unavailable.png" />
+    <None Include="Resources\icon_bow_unavailable.png" />
+    <None Include="Resources\icon_bottles_unavailable.png" />
+    <None Include="Resources\icon_boomerang_unavailable.png" />
+    <None Include="Resources\icon_bombs_unavailable.png" />
     <None Include="Resources\icon_rupees.png" />
     <None Include="Resources\icon_monstertail.png" />
     <None Include="Resources\icon_monsterhorn.png" />

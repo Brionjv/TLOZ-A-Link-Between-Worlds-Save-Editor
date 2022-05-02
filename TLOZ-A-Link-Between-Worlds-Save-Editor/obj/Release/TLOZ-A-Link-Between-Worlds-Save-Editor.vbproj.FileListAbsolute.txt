@@ -16,7 +16,6 @@ D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Li
 D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\bin\Release\TLOZ-A-Link-Between-Worlds-Save-Editor.pdb
 D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\bin\Release\TLOZ-A-Link-Between-Worlds-Save-Editor.xml
 D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\bin\Release\PackageIO.dll
-D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\obj\Release\TLOZ-A-Link-Between-Worlds-Save-Editor.vbprojAssemblyReference.cache
 D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\obj\Release\TLOZ_A_Link_Between_Worlds_Save_Editor.Form1.resources
 D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\obj\Release\TLOZ_A_Link_Between_Worlds_Save_Editor.Resources.resources
 D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\obj\Release\TLOZ-A-Link-Between-Worlds-Save-Editor.vbproj.GenerateResource.cache
@@ -25,3 +24,5 @@ D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Li
 D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\obj\Release\TLOZ-A-Link-Between-Worlds-Save-Editor.exe
 D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\obj\Release\TLOZ-A-Link-Between-Worlds-Save-Editor.xml
 D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\obj\Release\TLOZ-A-Link-Between-Worlds-Save-Editor.pdb
+D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\obj\Release\TLOZ-A-Link-Between-Worlds-Save-Editor.vbproj.AssemblyReference.cache
+D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\obj\Release\TLOZ_A_Link_Between_Worlds_Save_Editor.ZBWSE_dialog.resources

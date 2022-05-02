@@ -1,6 +1,6 @@
 ﻿Imports PackageIO
 Imports System.IO
-
+Imports System.Net
 Public Class Form1
     Dim Zeldasave As String
     Private pInititialized As Boolean
@@ -206,6 +206,16 @@ Public Class Form1
             valu_bottle4.Value = Reader.ReadByte
             Reader.Position = Bottle5
             valu_bottle5.Value = Reader.ReadByte
+            Reader.Position = Bottle1item
+            valu_bottleitem_1.Value = Reader.ReadByte
+            Reader.Position = Bottle2item
+            valu_bottleitem_2.Value = Reader.ReadByte
+            Reader.Position = Bottle3item
+            valu_bottleitem_3.Value = Reader.ReadByte
+            Reader.Position = Bottle4item
+            valu_bottleitem_4.Value = Reader.ReadByte
+            Reader.Position = Bottle5item
+            valu_bottleitem_5.Value = Reader.ReadByte
         Catch ex As Exception
 
         End Try
@@ -280,7 +290,8 @@ Public Class Form1
         writezelda1()
         readzeldasave()
         Crc32_z1()
-        writezelda2()
+        'writezelda2()
+        WriteCRC()
         Text_menu_save.Visible = False
     End Sub
 
@@ -289,14 +300,14 @@ Public Class Form1
             Dim Writerx As New PackageIO.Writer(Zeldasave, PackageIO.Endian.Little)
             Writerx.Position = Rupee
             Writerx.WriteUInt16(valu_ruppe.Value)
-            Writerx.Position = Rupee
-            Writerx.WriteUInt16(valu_ruppe.Value)
             For i = 0 To 9
                 Writerx.Position = Savename + i
                 Writerx.WriteInt8(0)
             Next
             Writerx.Position = Savename
             Writerx.WriteUnicodeString(Text_savename.Text)
+            Writerx.Flush()
+            Writerx.Close()
         Catch ex As Exception
         End Try
     End Sub
@@ -356,6 +367,16 @@ Public Class Form1
             fs.WriteByte(valu_bottle4.Value)
             fs.Position = Bottle5
             fs.WriteByte(valu_bottle5.Value)
+            fs.Position = Bottle1item
+            fs.WriteByte(valu_bottleitem_1.Value)
+            fs.Position = Bottle2item
+            fs.WriteByte(valu_bottleitem_2.Value)
+            fs.Position = Bottle3item
+            fs.WriteByte(valu_bottleitem_3.Value)
+            fs.Position = Bottle4item
+            fs.WriteByte(valu_bottleitem_4.Value)
+            fs.Position = Bottle5item
+            fs.WriteByte(valu_bottleitem_5.Value)
         Catch ex As Exception
         End Try
     End Sub
@@ -367,6 +388,17 @@ Public Class Form1
             For j As Integer = 0 To Text_crc32_z1reflet.Text.Length - 1 Step 2
                 xs.WriteByte(CByte(Conversion.Val("&H" & Text_crc32_z1reflet.Text.Substring(j, 2))))
             Next
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Public Sub WriteCRC()
+        Try
+            Dim writer As New PackageIO.Writer(Zeldasave, PackageIO.Endian.Little)
+            writer.Position = &HDFC
+            writer.WriteHexString(Text_crc32_z1reflet.Text)
+            MsgBox("crc write")
         Catch ex As Exception
 
         End Try
@@ -3847,4 +3879,974 @@ Public Class Form1
             valu_actualworld.Value = 1
         End If
     End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Select_actualworld.SelectedItem = Select_actualworld.Items.Item(0)
+    End Sub
+
+    Private Sub Icon_rupee_Click(sender As Object, e As EventArgs) Handles Icon_rupee.Click
+        valu_ruppe.Value = 9999
+    End Sub
+
+    Private Sub Icon_lostmaiamai_Click(sender As Object, e As EventArgs) Handles Icon_lostmaiamai.Click
+        valu_lostmaiamai.Value = 100
+    End Sub
+
+    Private Sub Icon_monstertail_Click(sender As Object, e As EventArgs) Handles Icon_monstertail.Click
+        valu_monstertail.Value = 99
+    End Sub
+
+    Private Sub Icon_monsterhorn_Click(sender As Object, e As EventArgs) Handles Icon_monsterhorn.Click
+        valu_monsterhorn.Value = 99
+    End Sub
+
+    Private Sub Icon_monstergust_Click(sender As Object, e As EventArgs) Handles Icon_monstergust.Click
+        valu_monstergust.Value = 99
+    End Sub
+
+    Private Sub valu_bombs_ValueChanged(sender As Object, e As EventArgs) Handles valu_bombs.ValueChanged
+        If valu_bombs.Value = 0 Then
+            Icon_bombs.Image = My.Resources.icon_bombs_unavailable
+        End If
+        If valu_bombs.Value = 1 Then
+            Icon_bombs.Image = My.Resources.icon_bombs_rented
+        End If
+        If valu_bombs.Value = 2 Then
+            Icon_bombs.Image = My.Resources.icon_bombs
+        End If
+        If valu_bombs.Value = 3 Then
+            Icon_bombs.Image = My.Resources.icon_bombs_nice
+        End If
+    End Sub
+
+    Private Sub valu_boomerang_ValueChanged(sender As Object, e As EventArgs) Handles valu_boomerang.ValueChanged
+        If valu_boomerang.Value = 0 Then
+            Icon_boomerang.Image = My.Resources.icon_boomerang_unavailable
+        End If
+        If valu_boomerang.Value = 1 Then
+            Icon_boomerang.Image = My.Resources.icon_boomerang_rented
+        End If
+        If valu_boomerang.Value = 2 Then
+            Icon_boomerang.Image = My.Resources.icon_boomerang
+        End If
+        If valu_boomerang.Value = 3 Then
+            Icon_boomerang.Image = My.Resources.icon_boomerang_nice
+        End If
+    End Sub
+
+    Private Sub valu_bow_ValueChanged(sender As Object, e As EventArgs) Handles valu_bow.ValueChanged
+        If valu_bow.Value = 0 Then
+            Icon_bow.Image = My.Resources.icon_bow_unavailable
+        End If
+        If valu_bow.Value = 1 Then
+            Icon_bow.Image = My.Resources.icon_bow_rented
+        End If
+        If valu_bow.Value = 2 Then
+            Icon_bow.Image = My.Resources.icon_bow
+        End If
+        If valu_bow.Value = 3 Then
+            Icon_bow.Image = My.Resources.icon_bow_nice
+        End If
+    End Sub
+
+    Private Sub valu_bowoflight_ValueChanged(sender As Object, e As EventArgs) Handles valu_bowoflight.ValueChanged
+        If valu_bowoflight.Value = 0 Then
+            Icon_bowoflight.Image = My.Resources.icon_bowoflight_unavailable
+        End If
+        If valu_bowoflight.Value = 1 Then
+            Icon_bowoflight.Image = My.Resources.icon_unusword
+        End If
+        If valu_bowoflight.Value = 2 Then
+            Icon_bowoflight.Image = My.Resources.icon_bowoflight
+        End If
+        If valu_bowoflight.Value = 3 Then
+            Icon_bowoflight.Image = My.Resources.icon_unusword
+        End If
+    End Sub
+
+    Private Sub valu_hammer_ValueChanged(sender As Object, e As EventArgs) Handles valu_hammer.ValueChanged
+        If valu_hammer.Value = 0 Then
+            Icon_hammer.Image = My.Resources.icon_hammer_unavailable
+        End If
+        If valu_hammer.Value = 1 Then
+            Icon_hammer.Image = My.Resources.icon_hammer_rented
+        End If
+        If valu_hammer.Value = 2 Then
+            Icon_hammer.Image = My.Resources.icon_hammer
+        End If
+        If valu_hammer.Value = 3 Then
+            Icon_hammer.Image = My.Resources.icon_hammer_nice
+        End If
+    End Sub
+
+    Private Sub valu_sandrod_ValueChanged(sender As Object, e As EventArgs) Handles valu_sandrod.ValueChanged
+        If valu_sandrod.Value = 0 Then
+            Icon_sandrod.Image = My.Resources.icon_sandrod_unavailable
+        End If
+        If valu_sandrod.Value = 1 Then
+            Icon_sandrod.Image = My.Resources.icon_sandrod_rented
+        End If
+        If valu_sandrod.Value = 2 Then
+            Icon_sandrod.Image = My.Resources.icon_sandrod
+        End If
+        If valu_sandrod.Value = 3 Then
+            Icon_sandrod.Image = My.Resources.icon_sandrod_nice
+        End If
+    End Sub
+
+    Private Sub valu_firerod_ValueChanged(sender As Object, e As EventArgs) Handles valu_firerod.ValueChanged
+        If valu_firerod.Value = 0 Then
+            Icon_firerod.Image = My.Resources.icon_firerod_unavailable
+        End If
+        If valu_firerod.Value = 1 Then
+            Icon_firerod.Image = My.Resources.icon_firerod_rented
+        End If
+        If valu_firerod.Value = 2 Then
+            Icon_firerod.Image = My.Resources.icon_firerod
+        End If
+        If valu_firerod.Value = 3 Then
+            Icon_firerod.Image = My.Resources.icon_firerod_nice
+        End If
+    End Sub
+
+    Private Sub valu_icerod_ValueChanged(sender As Object, e As EventArgs) Handles valu_icerod.ValueChanged
+        If valu_icerod.Value = 0 Then
+            Icon_icerod.Image = My.Resources.icon_icerod_unavailable
+        End If
+        If valu_icerod.Value = 1 Then
+            Icon_icerod.Image = My.Resources.icon_icerod_rented
+        End If
+        If valu_icerod.Value = 2 Then
+            Icon_icerod.Image = My.Resources.icon_icerod
+        End If
+        If valu_icerod.Value = 3 Then
+            Icon_icerod.Image = My.Resources.icon_icerod_nice
+        End If
+    End Sub
+
+    Private Sub valu_tornadorod_ValueChanged(sender As Object, e As EventArgs) Handles valu_tornadorod.ValueChanged
+        If valu_tornadorod.Value = 0 Then
+            Icon_tornadorod.Image = My.Resources.icon_tornadorod_unavailable
+        End If
+        If valu_tornadorod.Value = 1 Then
+            Icon_tornadorod.Image = My.Resources.icon_tornadorod_rented
+        End If
+        If valu_tornadorod.Value = 2 Then
+            Icon_tornadorod.Image = My.Resources.icon_tornadorod
+        End If
+        If valu_tornadorod.Value = 3 Then
+            Icon_tornadorod.Image = My.Resources.icon_tornadorod_nice
+        End If
+    End Sub
+
+    Private Sub valu_hookshot_ValueChanged(sender As Object, e As EventArgs) Handles valu_hookshot.ValueChanged
+        If valu_hookshot.Value = 0 Then
+            Icon_hookshot.Image = My.Resources.icon_hookshot_unavailable
+        End If
+        If valu_hookshot.Value = 1 Then
+            Icon_hookshot.Image = My.Resources.icon_hookshot_rented
+        End If
+        If valu_hookshot.Value = 2 Then
+            Icon_hookshot.Image = My.Resources.icon_hookshot
+        End If
+        If valu_hookshot.Value = 3 Then
+            Icon_hookshot.Image = My.Resources.icon_hookshot_nice
+        End If
+    End Sub
+
+    Private Sub valu_lamp_ValueChanged(sender As Object, e As EventArgs) Handles valu_lamp.ValueChanged
+        If valu_lamp.Value = 0 Then
+            Icon_lamp.Image = My.Resources.icon_lamp_unavailable
+        End If
+        If valu_lamp.Value = 1 Then
+            Icon_lamp.Image = My.Resources.icon_unusword
+        End If
+        If valu_lamp.Value = 2 Then
+            Icon_lamp.Image = My.Resources.icon_lamp
+        End If
+        If valu_lamp.Value = 3 Then
+            Icon_lamp.Image = My.Resources.icon_lamp_nice
+        End If
+    End Sub
+
+    Private Sub valu_net_ValueChanged(sender As Object, e As EventArgs) Handles valu_net.ValueChanged
+        If valu_net.Value = 0 Then
+            Icon_net.Image = My.Resources.icon_net_unavailable
+        End If
+        If valu_net.Value = 1 Then
+            Icon_net.Image = My.Resources.icon_unusword
+        End If
+        If valu_net.Value = 2 Then
+            Icon_net.Image = My.Resources.icon_net
+        End If
+        If valu_net.Value = 3 Then
+            Icon_net.Image = My.Resources.icon_net_nice
+        End If
+    End Sub
+
+    Private Sub valu_hintglasses_ValueChanged(sender As Object, e As EventArgs) Handles valu_hintglasses.ValueChanged
+        If valu_hintglasses.Value = 0 Then
+            Icon_hintglasses.Image = My.Resources.icon_hintglasses_unavailable
+        End If
+        If valu_hintglasses.Value = 1 Then
+            Icon_hintglasses.Image = My.Resources.icon_unusword
+        End If
+        If valu_hintglasses.Value = 2 Then
+            Icon_hintglasses.Image = My.Resources.icon_hintglasses
+        End If
+        If valu_hintglasses.Value = 3 Then
+            Icon_hintglasses.Image = My.Resources.icon_unusword
+        End If
+    End Sub
+
+    Private Sub valu_scootfruit_ValueChanged(sender As Object, e As EventArgs) Handles valu_scootfruit.ValueChanged
+        If valu_scootfruit.Value = 0 Then
+            Icon_scootfruit.Image = My.Resources.icon_scootfruit_unavailable
+        End If
+        If valu_scootfruit.Value = 1 Then
+            Icon_scootfruit.Image = My.Resources.icon_unusword
+        End If
+        If valu_scootfruit.Value = 2 Then
+            Icon_scootfruit.Image = My.Resources.icon_scootfruit
+        End If
+        If valu_scootfruit.Value = 3 Then
+            Icon_scootfruit.Image = My.Resources.icon_unusword
+        End If
+    End Sub
+
+    Private Sub valu_foulfruit_ValueChanged(sender As Object, e As EventArgs) Handles valu_foulfruit.ValueChanged
+        If valu_foulfruit.Value = 0 Then
+            Icon_foulfruit.Image = My.Resources.icon_foulfruit_unavailable
+        End If
+        If valu_foulfruit.Value = 1 Then
+            Icon_foulfruit.Image = My.Resources.icon_unusword
+        End If
+        If valu_foulfruit.Value = 2 Then
+            Icon_foulfruit.Image = My.Resources.icon_foulfruit
+        End If
+        If valu_foulfruit.Value = 3 Then
+            Icon_foulfruit.Image = My.Resources.icon_unusword
+        End If
+    End Sub
+
+    Private Sub valu_bottle1_ValueChanged(sender As Object, e As EventArgs) Handles valu_bottle1.ValueChanged
+        If valu_bottle1.Value = 0 Then
+            Icon_bottle1.Image = My.Resources.icon_bottles_unavailable
+            Icon_bottleitem_1.Visible = False
+        End If
+        If valu_bottle1.Value = 1 Then
+            Icon_bottle1.Image = My.Resources.icon_unusword
+            Icon_bottleitem_1.Visible = True
+        End If
+        If valu_bottle1.Value = 2 Then
+            Icon_bottle1.Image = My.Resources.icon_bottles
+            Icon_bottleitem_1.Visible = True
+        End If
+        If valu_bottle1.Value = 3 Then
+            Icon_bottle1.Image = My.Resources.icon_unusword
+            Icon_bottleitem_1.Visible = True
+        End If
+    End Sub
+
+    Private Sub valu_bottle2_ValueChanged(sender As Object, e As EventArgs) Handles valu_bottle2.ValueChanged
+        If valu_bottle2.Value = 0 Then
+            Icon_bottle2.Image = My.Resources.icon_bottles_unavailable
+            Icon_bottleitem_2.Visible = False
+        End If
+        If valu_bottle2.Value = 1 Then
+            Icon_bottle2.Image = My.Resources.icon_unusword
+            Icon_bottleitem_2.Visible = True
+        End If
+        If valu_bottle2.Value = 2 Then
+            Icon_bottle2.Image = My.Resources.icon_bottles
+            Icon_bottleitem_2.Visible = True
+        End If
+        If valu_bottle2.Value = 3 Then
+            Icon_bottle2.Image = My.Resources.icon_unusword
+            Icon_bottleitem_2.Visible = True
+        End If
+    End Sub
+
+    Private Sub valu_bottle3_ValueChanged(sender As Object, e As EventArgs) Handles valu_bottle3.ValueChanged
+        If valu_bottle3.Value = 0 Then
+            Icon_bottle3.Image = My.Resources.icon_bottles_unavailable
+            Icon_bottleitem_3.Visible = False
+        End If
+        If valu_bottle3.Value = 1 Then
+            Icon_bottle3.Image = My.Resources.icon_unusword
+            Icon_bottleitem_3.Visible = True
+        End If
+        If valu_bottle3.Value = 2 Then
+            Icon_bottle3.Image = My.Resources.icon_bottles
+            Icon_bottleitem_3.Visible = True
+        End If
+        If valu_bottle3.Value = 3 Then
+            Icon_bottle3.Image = My.Resources.icon_unusword
+            Icon_bottleitem_3.Visible = True
+        End If
+    End Sub
+
+    Private Sub valu_bottle4_ValueChanged(sender As Object, e As EventArgs) Handles valu_bottle4.ValueChanged
+        If valu_bottle4.Value = 0 Then
+            Icon_bottle4.Image = My.Resources.icon_bottles_unavailable
+            Icon_bottleitem_4.Visible = False
+        End If
+        If valu_bottle4.Value = 1 Then
+            Icon_bottle4.Image = My.Resources.icon_unusword
+            Icon_bottleitem_4.Visible = True
+        End If
+        If valu_bottle4.Value = 2 Then
+            Icon_bottle4.Image = My.Resources.icon_bottles
+            Icon_bottleitem_4.Visible = True
+        End If
+        If valu_bottle4.Value = 3 Then
+            Icon_bottle4.Image = My.Resources.icon_unusword
+            Icon_bottleitem_4.Visible = True
+        End If
+    End Sub
+
+    Private Sub valu_bottle5_ValueChanged(sender As Object, e As EventArgs) Handles valu_bottle5.ValueChanged
+        If valu_bottle5.Value = 0 Then
+            Icon_bottle5.Image = My.Resources.icon_bottles_unavailable
+            Icon_bottleitem_5.Visible = False
+        End If
+        If valu_bottle5.Value = 1 Then
+            Icon_bottle5.Image = My.Resources.icon_unusword
+            Icon_bottleitem_5.Visible = True
+        End If
+        If valu_bottle5.Value = 2 Then
+            Icon_bottle5.Image = My.Resources.icon_bottles
+            Icon_bottleitem_5.Visible = True
+        End If
+        If valu_bottle5.Value = 3 Then
+            Icon_bottle5.Image = My.Resources.icon_unusword
+            Icon_bottleitem_5.Visible = True
+        End If
+    End Sub
+
+    Private Sub valu_bottleitem_1_ValueChanged(sender As Object, e As EventArgs) Handles valu_bottleitem_1.ValueChanged
+        If valu_bottleitem_1.Value = 0 Then
+            Icon_bottleitem_1.Image = My.Resources.bottle_empty
+        End If
+        If valu_bottleitem_1.Value = 1 Then
+            Icon_bottleitem_1.Image = My.Resources.bottle_redpotion
+        End If
+        If valu_bottleitem_1.Value = 2 Then
+            Icon_bottleitem_1.Image = My.Resources.bottle_bluepotion
+        End If
+        If valu_bottleitem_1.Value = 3 Then
+            Icon_bottleitem_1.Image = My.Resources.bottle_purplepotion
+        End If
+        If valu_bottleitem_1.Value = 4 Then
+            Icon_bottleitem_1.Image = My.Resources.bottle_yellowpotion
+        End If
+        If valu_bottleitem_1.Value = 5 Then
+            Icon_bottleitem_1.Image = My.Resources.bottle_fairy
+        End If
+        If valu_bottleitem_1.Value = 6 Then
+            Icon_bottleitem_1.Image = My.Resources.bottle_bee
+        End If
+        If valu_bottleitem_1.Value = 7 Then
+            Icon_bottleitem_1.Image = My.Resources.bottle_goldenbee
+        End If
+        If valu_bottleitem_1.Value = 8 Then
+            Icon_bottleitem_1.Image = My.Resources.bottle_heart
+        End If
+        If valu_bottleitem_1.Value = 9 Then
+            Icon_bottleitem_1.Image = My.Resources.bottle_apple
+        End If
+        If valu_bottleitem_1.Value = 10 Then
+            Icon_bottleitem_1.Image = My.Resources.bottle_greenapple
+        End If
+        If valu_bottleitem_1.Value = 11 Then
+            Icon_bottleitem_1.Image = My.Resources.bottle_letter
+        End If
+        If valu_bottleitem_1.Value = 12 Then
+            Icon_bottleitem_1.Image = My.Resources.bottle_milk
+        End If
+        If valu_bottleitem_1.Value = 13 Then
+            Icon_bottleitem_1.Image = My.Resources.bottle_premiummilk
+        End If
+    End Sub
+
+    Private Sub valu_bottleitem_2_ValueChanged(sender As Object, e As EventArgs) Handles valu_bottleitem_2.ValueChanged
+        If valu_bottleitem_2.Value = 0 Then
+            Icon_bottleitem_2.Image = My.Resources.bottle_empty
+        End If
+        If valu_bottleitem_2.Value = 1 Then
+            Icon_bottleitem_2.Image = My.Resources.bottle_redpotion
+        End If
+        If valu_bottleitem_2.Value = 2 Then
+            Icon_bottleitem_2.Image = My.Resources.bottle_bluepotion
+        End If
+        If valu_bottleitem_2.Value = 3 Then
+            Icon_bottleitem_2.Image = My.Resources.bottle_purplepotion
+        End If
+        If valu_bottleitem_2.Value = 4 Then
+            Icon_bottleitem_2.Image = My.Resources.bottle_yellowpotion
+        End If
+        If valu_bottleitem_2.Value = 5 Then
+            Icon_bottleitem_2.Image = My.Resources.bottle_fairy
+        End If
+        If valu_bottleitem_2.Value = 6 Then
+            Icon_bottleitem_2.Image = My.Resources.bottle_bee
+        End If
+        If valu_bottleitem_2.Value = 7 Then
+            Icon_bottleitem_2.Image = My.Resources.bottle_goldenbee
+        End If
+        If valu_bottleitem_2.Value = 8 Then
+            Icon_bottleitem_2.Image = My.Resources.bottle_heart
+        End If
+        If valu_bottleitem_2.Value = 9 Then
+            Icon_bottleitem_2.Image = My.Resources.bottle_apple
+        End If
+        If valu_bottleitem_2.Value = 10 Then
+            Icon_bottleitem_2.Image = My.Resources.bottle_greenapple
+        End If
+        If valu_bottleitem_2.Value = 11 Then
+            Icon_bottleitem_2.Image = My.Resources.bottle_letter
+        End If
+        If valu_bottleitem_2.Value = 12 Then
+            Icon_bottleitem_2.Image = My.Resources.bottle_milk
+        End If
+        If valu_bottleitem_2.Value = 13 Then
+            Icon_bottleitem_2.Image = My.Resources.bottle_premiummilk
+        End If
+    End Sub
+
+    Private Sub valu_bottleitem_3_ValueChanged(sender As Object, e As EventArgs) Handles valu_bottleitem_3.ValueChanged
+        If valu_bottleitem_3.Value = 0 Then
+            Icon_bottleitem_3.Image = My.Resources.bottle_empty
+        End If
+        If valu_bottleitem_3.Value = 1 Then
+            Icon_bottleitem_3.Image = My.Resources.bottle_redpotion
+        End If
+        If valu_bottleitem_3.Value = 2 Then
+            Icon_bottleitem_3.Image = My.Resources.bottle_bluepotion
+        End If
+        If valu_bottleitem_3.Value = 3 Then
+            Icon_bottleitem_3.Image = My.Resources.bottle_purplepotion
+        End If
+        If valu_bottleitem_3.Value = 4 Then
+            Icon_bottleitem_3.Image = My.Resources.bottle_yellowpotion
+        End If
+        If valu_bottleitem_3.Value = 5 Then
+            Icon_bottleitem_3.Image = My.Resources.bottle_fairy
+        End If
+        If valu_bottleitem_3.Value = 6 Then
+            Icon_bottleitem_3.Image = My.Resources.bottle_bee
+        End If
+        If valu_bottleitem_3.Value = 7 Then
+            Icon_bottleitem_3.Image = My.Resources.bottle_goldenbee
+        End If
+        If valu_bottleitem_3.Value = 8 Then
+            Icon_bottleitem_3.Image = My.Resources.bottle_heart
+        End If
+        If valu_bottleitem_3.Value = 9 Then
+            Icon_bottleitem_3.Image = My.Resources.bottle_apple
+        End If
+        If valu_bottleitem_3.Value = 10 Then
+            Icon_bottleitem_3.Image = My.Resources.bottle_greenapple
+        End If
+        If valu_bottleitem_3.Value = 11 Then
+            Icon_bottleitem_3.Image = My.Resources.bottle_letter
+        End If
+        If valu_bottleitem_3.Value = 12 Then
+            Icon_bottleitem_3.Image = My.Resources.bottle_milk
+        End If
+        If valu_bottleitem_3.Value = 13 Then
+            Icon_bottleitem_3.Image = My.Resources.bottle_premiummilk
+        End If
+    End Sub
+
+    Private Sub valu_bottleitem_4_ValueChanged(sender As Object, e As EventArgs) Handles valu_bottleitem_4.ValueChanged
+        If valu_bottleitem_4.Value = 0 Then
+            Icon_bottleitem_4.Image = My.Resources.bottle_empty
+        End If
+        If valu_bottleitem_4.Value = 1 Then
+            Icon_bottleitem_4.Image = My.Resources.bottle_redpotion
+        End If
+        If valu_bottleitem_4.Value = 2 Then
+            Icon_bottleitem_4.Image = My.Resources.bottle_bluepotion
+        End If
+        If valu_bottleitem_4.Value = 3 Then
+            Icon_bottleitem_4.Image = My.Resources.bottle_purplepotion
+        End If
+        If valu_bottleitem_4.Value = 4 Then
+            Icon_bottleitem_4.Image = My.Resources.bottle_yellowpotion
+        End If
+        If valu_bottleitem_4.Value = 5 Then
+            Icon_bottleitem_4.Image = My.Resources.bottle_fairy
+        End If
+        If valu_bottleitem_4.Value = 6 Then
+            Icon_bottleitem_4.Image = My.Resources.bottle_bee
+        End If
+        If valu_bottleitem_4.Value = 7 Then
+            Icon_bottleitem_4.Image = My.Resources.bottle_goldenbee
+        End If
+        If valu_bottleitem_4.Value = 8 Then
+            Icon_bottleitem_4.Image = My.Resources.bottle_heart
+        End If
+        If valu_bottleitem_4.Value = 9 Then
+            Icon_bottleitem_4.Image = My.Resources.bottle_apple
+        End If
+        If valu_bottleitem_4.Value = 10 Then
+            Icon_bottleitem_4.Image = My.Resources.bottle_greenapple
+        End If
+        If valu_bottleitem_4.Value = 11 Then
+            Icon_bottleitem_4.Image = My.Resources.bottle_letter
+        End If
+        If valu_bottleitem_4.Value = 12 Then
+            Icon_bottleitem_4.Image = My.Resources.bottle_milk
+        End If
+        If valu_bottleitem_4.Value = 13 Then
+            Icon_bottleitem_4.Image = My.Resources.bottle_premiummilk
+        End If
+    End Sub
+
+    Private Sub valu_bottleitem_5_ValueChanged(sender As Object, e As EventArgs) Handles valu_bottleitem_5.ValueChanged
+        If valu_bottleitem_5.Value = 0 Then
+            Icon_bottleitem_5.Image = My.Resources.bottle_empty
+        End If
+        If valu_bottleitem_5.Value = 1 Then
+            Icon_bottleitem_5.Image = My.Resources.bottle_redpotion
+        End If
+        If valu_bottleitem_5.Value = 2 Then
+            Icon_bottleitem_5.Image = My.Resources.bottle_bluepotion
+        End If
+        If valu_bottleitem_5.Value = 3 Then
+            Icon_bottleitem_5.Image = My.Resources.bottle_purplepotion
+        End If
+        If valu_bottleitem_5.Value = 4 Then
+            Icon_bottleitem_5.Image = My.Resources.bottle_yellowpotion
+        End If
+        If valu_bottleitem_5.Value = 5 Then
+            Icon_bottleitem_5.Image = My.Resources.bottle_fairy
+        End If
+        If valu_bottleitem_5.Value = 6 Then
+            Icon_bottleitem_5.Image = My.Resources.bottle_bee
+        End If
+        If valu_bottleitem_5.Value = 7 Then
+            Icon_bottleitem_5.Image = My.Resources.bottle_goldenbee
+        End If
+        If valu_bottleitem_5.Value = 8 Then
+            Icon_bottleitem_5.Image = My.Resources.bottle_heart
+        End If
+        If valu_bottleitem_5.Value = 9 Then
+            Icon_bottleitem_5.Image = My.Resources.bottle_apple
+        End If
+        If valu_bottleitem_5.Value = 10 Then
+            Icon_bottleitem_5.Image = My.Resources.bottle_greenapple
+        End If
+        If valu_bottleitem_5.Value = 11 Then
+            Icon_bottleitem_5.Image = My.Resources.bottle_letter
+        End If
+        If valu_bottleitem_5.Value = 12 Then
+            Icon_bottleitem_5.Image = My.Resources.bottle_milk
+        End If
+        If valu_bottleitem_5.Value = 13 Then
+            Icon_bottleitem_5.Image = My.Resources.bottle_premiummilk
+        End If
+    End Sub
+
+    Private Sub Icon_bombs_Click(sender As Object, e As EventArgs) Handles Icon_bombs.Click
+        If valu_bombs.Value = 0 Then
+            valu_bombs.Value = 1
+        ElseIf valu_bombs.Value = 1 Then
+            valu_bombs.Value = 2
+        ElseIf valu_bombs.Value = 2 Then
+            valu_bombs.Value = 3
+        ElseIf valu_bombs.Value = 3 Then
+            valu_bombs.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_boomerang_Click(sender As Object, e As EventArgs) Handles Icon_boomerang.Click
+        If valu_boomerang.Value = 0 Then
+            valu_boomerang.Value = 1
+        ElseIf valu_boomerang.Value = 1 Then
+            valu_boomerang.Value = 2
+        ElseIf valu_boomerang.Value = 2 Then
+            valu_boomerang.Value = 3
+        ElseIf valu_boomerang.Value = 3 Then
+            valu_boomerang.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_bow_Click(sender As Object, e As EventArgs) Handles Icon_bow.Click
+        If valu_bow.Value = 0 Then
+            valu_bow.Value = 1
+        ElseIf valu_bow.Value = 1 Then
+            valu_bow.Value = 2
+        ElseIf valu_bow.Value = 2 Then
+            valu_bow.Value = 3
+        ElseIf valu_bow.Value = 3 Then
+            valu_bow.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_bowoflight_Click(sender As Object, e As EventArgs) Handles Icon_bowoflight.Click
+        If valu_bowoflight.Value = 0 Then
+            valu_bowoflight.Value = 1
+        ElseIf valu_bowoflight.Value = 1 Then
+            valu_bowoflight.Value = 2
+        ElseIf valu_bowoflight.Value = 2 Then
+            valu_bowoflight.Value = 3
+        ElseIf valu_bowoflight.Value = 3 Then
+            valu_bowoflight.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_hammer_Click(sender As Object, e As EventArgs) Handles Icon_hammer.Click
+        If valu_hammer.Value = 0 Then
+            valu_hammer.Value = 1
+        ElseIf valu_hammer.Value = 1 Then
+            valu_hammer.Value = 2
+        ElseIf valu_hammer.Value = 2 Then
+            valu_hammer.Value = 3
+        ElseIf valu_hammer.Value = 3 Then
+            valu_hammer.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_sandrod_Click(sender As Object, e As EventArgs) Handles Icon_sandrod.Click
+        If valu_sandrod.Value = 0 Then
+            valu_sandrod.Value = 1
+        ElseIf valu_sandrod.Value = 1 Then
+            valu_sandrod.Value = 2
+        ElseIf valu_sandrod.Value = 2 Then
+            valu_sandrod.Value = 3
+        ElseIf valu_sandrod.Value = 3 Then
+            valu_sandrod.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_firerod_Click(sender As Object, e As EventArgs) Handles Icon_firerod.Click
+        If valu_firerod.Value = 0 Then
+            valu_firerod.Value = 1
+        ElseIf valu_firerod.Value = 1 Then
+            valu_firerod.Value = 2
+        ElseIf valu_firerod.Value = 2 Then
+            valu_firerod.Value = 3
+        ElseIf valu_firerod.Value = 3 Then
+            valu_firerod.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_icerod_Click(sender As Object, e As EventArgs) Handles Icon_icerod.Click
+        If valu_icerod.Value = 0 Then
+            valu_icerod.Value = 1
+        ElseIf valu_icerod.Value = 1 Then
+            valu_icerod.Value = 2
+        ElseIf valu_icerod.Value = 2 Then
+            valu_icerod.Value = 3
+        ElseIf valu_icerod.Value = 3 Then
+            valu_icerod.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_tornadorod_Click(sender As Object, e As EventArgs) Handles Icon_tornadorod.Click
+        If valu_tornadorod.Value = 0 Then
+            valu_tornadorod.Value = 1
+        ElseIf valu_tornadorod.Value = 1 Then
+            valu_tornadorod.Value = 2
+        ElseIf valu_tornadorod.Value = 2 Then
+            valu_tornadorod.Value = 3
+        ElseIf valu_tornadorod.Value = 3 Then
+            valu_tornadorod.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_hookshot_Click(sender As Object, e As EventArgs) Handles Icon_hookshot.Click
+        If valu_hookshot.Value = 0 Then
+            valu_hookshot.Value = 1
+        ElseIf valu_hookshot.Value = 1 Then
+            valu_hookshot.Value = 2
+        ElseIf valu_hookshot.Value = 2 Then
+            valu_hookshot.Value = 3
+        ElseIf valu_hookshot.Value = 3 Then
+            valu_hookshot.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_lamp_Click(sender As Object, e As EventArgs) Handles Icon_lamp.Click
+        If valu_lamp.Value = 0 Then
+            valu_lamp.Value = 1
+        ElseIf valu_lamp.Value = 1 Then
+            valu_lamp.Value = 2
+        ElseIf valu_lamp.Value = 2 Then
+            valu_lamp.Value = 3
+        ElseIf valu_lamp.Value = 3 Then
+            valu_lamp.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_net_Click(sender As Object, e As EventArgs) Handles Icon_net.Click
+        If valu_net.Value = 0 Then
+            valu_net.Value = 1
+        ElseIf valu_net.Value = 1 Then
+            valu_net.Value = 2
+        ElseIf valu_net.Value = 2 Then
+            valu_net.Value = 3
+        ElseIf valu_net.Value = 3 Then
+            valu_net.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_hintglasses_Click(sender As Object, e As EventArgs) Handles Icon_hintglasses.Click
+        If valu_hintglasses.Value = 0 Then
+            valu_hintglasses.Value = 1
+        ElseIf valu_hintglasses.Value = 1 Then
+            valu_hintglasses.Value = 2
+        ElseIf valu_hintglasses.Value = 2 Then
+            valu_hintglasses.Value = 3
+        ElseIf valu_hintglasses.Value = 3 Then
+            valu_hintglasses.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_scootfruit_Click(sender As Object, e As EventArgs) Handles Icon_scootfruit.Click
+        If valu_scootfruit.Value = 0 Then
+            valu_scootfruit.Value = 1
+        ElseIf valu_scootfruit.Value = 1 Then
+            valu_scootfruit.Value = 2
+        ElseIf valu_scootfruit.Value = 2 Then
+            valu_scootfruit.Value = 3
+        ElseIf valu_scootfruit.Value = 3 Then
+            valu_scootfruit.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_foulfruit_Click(sender As Object, e As EventArgs) Handles Icon_foulfruit.Click
+        If valu_foulfruit.Value = 0 Then
+            valu_foulfruit.Value = 1
+        ElseIf valu_foulfruit.Value = 1 Then
+            valu_foulfruit.Value = 2
+        ElseIf valu_foulfruit.Value = 2 Then
+            valu_foulfruit.Value = 3
+        ElseIf valu_foulfruit.Value = 3 Then
+            valu_foulfruit.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_bottle1_Click(sender As Object, e As EventArgs) Handles Icon_bottle1.Click
+        If valu_bottle1.Value = 0 Then
+            valu_bottle1.Value = 1
+        ElseIf valu_bottle1.Value = 1 Then
+            valu_bottle1.Value = 2
+        ElseIf valu_bottle1.Value = 2 Then
+            valu_bottle1.Value = 3
+        ElseIf valu_bottle1.Value = 3 Then
+            valu_bottle1.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_bottle2_Click(sender As Object, e As EventArgs) Handles Icon_bottle2.Click
+        If valu_bottle2.Value = 0 Then
+            valu_bottle2.Value = 1
+        ElseIf valu_bottle2.Value = 1 Then
+            valu_bottle2.Value = 2
+        ElseIf valu_bottle2.Value = 2 Then
+            valu_bottle2.Value = 3
+        ElseIf valu_bottle2.Value = 3 Then
+            valu_bottle2.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_bottle3_Click(sender As Object, e As EventArgs) Handles Icon_bottle3.Click
+        If valu_bottle3.Value = 0 Then
+            valu_bottle3.Value = 1
+        ElseIf valu_bottle3.Value = 1 Then
+            valu_bottle3.Value = 2
+        ElseIf valu_bottle3.Value = 2 Then
+            valu_bottle3.Value = 3
+        ElseIf valu_bottle3.Value = 3 Then
+            valu_bottle3.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_bottle4_Click(sender As Object, e As EventArgs) Handles Icon_bottle4.Click
+        If valu_bottle4.Value = 0 Then
+            valu_bottle4.Value = 1
+        ElseIf valu_bottle4.Value = 1 Then
+            valu_bottle4.Value = 2
+        ElseIf valu_bottle4.Value = 2 Then
+            valu_bottle4.Value = 3
+        ElseIf valu_bottle4.Value = 3 Then
+            valu_bottle4.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_bottle5_Click(sender As Object, e As EventArgs) Handles Icon_bottle5.Click
+        If valu_bottle5.Value = 0 Then
+            valu_bottle5.Value = 1
+        ElseIf valu_bottle5.Value = 1 Then
+            valu_bottle5.Value = 2
+        ElseIf valu_bottle5.Value = 2 Then
+            valu_bottle5.Value = 3
+        ElseIf valu_bottle5.Value = 3 Then
+            valu_bottle5.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_bottleitem_1_Click(sender As Object, e As EventArgs) Handles Icon_bottleitem_1.Click
+        If valu_bottleitem_1.Value = 0 Then
+            valu_bottleitem_1.Value = 1
+        ElseIf valu_bottleitem_1.Value = 1 Then
+            valu_bottleitem_1.Value = 2
+        ElseIf valu_bottleitem_1.Value = 2 Then
+            valu_bottleitem_1.Value = 3
+        ElseIf valu_bottleitem_1.Value = 3 Then
+            valu_bottleitem_1.Value = 4
+        ElseIf valu_bottleitem_1.Value = 4 Then
+            valu_bottleitem_1.Value = 5
+        ElseIf valu_bottleitem_1.Value = 5 Then
+            valu_bottleitem_1.Value = 6
+        ElseIf valu_bottleitem_1.Value = 6 Then
+            valu_bottleitem_1.Value = 7
+        ElseIf valu_bottleitem_1.Value = 7 Then
+            valu_bottleitem_1.Value = 8
+        ElseIf valu_bottleitem_1.Value = 8 Then
+            valu_bottleitem_1.Value = 9
+        ElseIf valu_bottleitem_1.Value = 9 Then
+            valu_bottleitem_1.Value = 10
+        ElseIf valu_bottleitem_1.Value = 10 Then
+            valu_bottleitem_1.Value = 11
+        ElseIf valu_bottleitem_1.Value = 11 Then
+            valu_bottleitem_1.Value = 12
+        ElseIf valu_bottleitem_1.Value = 12 Then
+            valu_bottleitem_1.Value = 13
+        ElseIf valu_bottleitem_1.Value = 13 Then
+            valu_bottleitem_1.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_bottleitem_2_Click(sender As Object, e As EventArgs) Handles Icon_bottleitem_2.Click
+        If valu_bottleitem_2.Value = 0 Then
+            valu_bottleitem_2.Value = 1
+        ElseIf valu_bottleitem_2.Value = 1 Then
+            valu_bottleitem_2.Value = 2
+        ElseIf valu_bottleitem_2.Value = 2 Then
+            valu_bottleitem_2.Value = 3
+        ElseIf valu_bottleitem_2.Value = 3 Then
+            valu_bottleitem_2.Value = 4
+        ElseIf valu_bottleitem_2.Value = 4 Then
+            valu_bottleitem_2.Value = 5
+        ElseIf valu_bottleitem_2.Value = 5 Then
+            valu_bottleitem_2.Value = 6
+        ElseIf valu_bottleitem_2.Value = 6 Then
+            valu_bottleitem_2.Value = 7
+        ElseIf valu_bottleitem_2.Value = 7 Then
+            valu_bottleitem_2.Value = 8
+        ElseIf valu_bottleitem_2.Value = 8 Then
+            valu_bottleitem_2.Value = 9
+        ElseIf valu_bottleitem_2.Value = 9 Then
+            valu_bottleitem_2.Value = 10
+        ElseIf valu_bottleitem_2.Value = 10 Then
+            valu_bottleitem_2.Value = 11
+        ElseIf valu_bottleitem_2.Value = 11 Then
+            valu_bottleitem_2.Value = 12
+        ElseIf valu_bottleitem_2.Value = 12 Then
+            valu_bottleitem_2.Value = 13
+        ElseIf valu_bottleitem_2.Value = 13 Then
+            valu_bottleitem_2.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_bottleitem_3_Click(sender As Object, e As EventArgs) Handles Icon_bottleitem_3.Click
+        If valu_bottleitem_3.Value = 0 Then
+            valu_bottleitem_3.Value = 1
+        ElseIf valu_bottleitem_3.Value = 1 Then
+            valu_bottleitem_3.Value = 2
+        ElseIf valu_bottleitem_3.Value = 2 Then
+            valu_bottleitem_3.Value = 3
+        ElseIf valu_bottleitem_3.Value = 3 Then
+            valu_bottleitem_3.Value = 4
+        ElseIf valu_bottleitem_3.Value = 4 Then
+            valu_bottleitem_3.Value = 5
+        ElseIf valu_bottleitem_3.Value = 5 Then
+            valu_bottleitem_3.Value = 6
+        ElseIf valu_bottleitem_3.Value = 6 Then
+            valu_bottleitem_3.Value = 7
+        ElseIf valu_bottleitem_3.Value = 7 Then
+            valu_bottleitem_3.Value = 8
+        ElseIf valu_bottleitem_3.Value = 8 Then
+            valu_bottleitem_3.Value = 9
+        ElseIf valu_bottleitem_3.Value = 9 Then
+            valu_bottleitem_3.Value = 10
+        ElseIf valu_bottleitem_3.Value = 10 Then
+            valu_bottleitem_3.Value = 11
+        ElseIf valu_bottleitem_3.Value = 11 Then
+            valu_bottleitem_3.Value = 12
+        ElseIf valu_bottleitem_3.Value = 12 Then
+            valu_bottleitem_3.Value = 13
+        ElseIf valu_bottleitem_3.Value = 13 Then
+            valu_bottleitem_3.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_bottleitem_4_Click(sender As Object, e As EventArgs) Handles Icon_bottleitem_4.Click
+        If valu_bottleitem_4.Value = 0 Then
+            valu_bottleitem_4.Value = 1
+        ElseIf valu_bottleitem_4.Value = 1 Then
+            valu_bottleitem_4.Value = 2
+        ElseIf valu_bottleitem_4.Value = 2 Then
+            valu_bottleitem_4.Value = 3
+        ElseIf valu_bottleitem_4.Value = 3 Then
+            valu_bottleitem_4.Value = 4
+        ElseIf valu_bottleitem_4.Value = 4 Then
+            valu_bottleitem_4.Value = 5
+        ElseIf valu_bottleitem_4.Value = 5 Then
+            valu_bottleitem_4.Value = 6
+        ElseIf valu_bottleitem_4.Value = 6 Then
+            valu_bottleitem_4.Value = 7
+        ElseIf valu_bottleitem_4.Value = 7 Then
+            valu_bottleitem_4.Value = 8
+        ElseIf valu_bottleitem_4.Value = 8 Then
+            valu_bottleitem_4.Value = 9
+        ElseIf valu_bottleitem_4.Value = 9 Then
+            valu_bottleitem_4.Value = 10
+        ElseIf valu_bottleitem_4.Value = 10 Then
+            valu_bottleitem_4.Value = 11
+        ElseIf valu_bottleitem_4.Value = 11 Then
+            valu_bottleitem_4.Value = 12
+        ElseIf valu_bottleitem_4.Value = 12 Then
+            valu_bottleitem_4.Value = 13
+        ElseIf valu_bottleitem_4.Value = 13 Then
+            valu_bottleitem_4.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_bottleitem_5_Click(sender As Object, e As EventArgs) Handles Icon_bottleitem_5.Click
+        If valu_bottleitem_5.Value = 0 Then
+            valu_bottleitem_5.Value = 1
+        ElseIf valu_bottleitem_5.Value = 1 Then
+            valu_bottleitem_5.Value = 2
+        ElseIf valu_bottleitem_5.Value = 2 Then
+            valu_bottleitem_5.Value = 3
+        ElseIf valu_bottleitem_5.Value = 3 Then
+            valu_bottleitem_5.Value = 4
+        ElseIf valu_bottleitem_5.Value = 4 Then
+            valu_bottleitem_5.Value = 5
+        ElseIf valu_bottleitem_5.Value = 5 Then
+            valu_bottleitem_5.Value = 6
+        ElseIf valu_bottleitem_5.Value = 6 Then
+            valu_bottleitem_5.Value = 7
+        ElseIf valu_bottleitem_5.Value = 7 Then
+            valu_bottleitem_5.Value = 8
+        ElseIf valu_bottleitem_5.Value = 8 Then
+            valu_bottleitem_5.Value = 9
+        ElseIf valu_bottleitem_5.Value = 9 Then
+            valu_bottleitem_5.Value = 10
+        ElseIf valu_bottleitem_5.Value = 10 Then
+            valu_bottleitem_5.Value = 11
+        ElseIf valu_bottleitem_5.Value = 11 Then
+            valu_bottleitem_5.Value = 12
+        ElseIf valu_bottleitem_5.Value = 12 Then
+            valu_bottleitem_5.Value = 13
+        ElseIf valu_bottleitem_5.Value = 13 Then
+            valu_bottleitem_5.Value = 0
+        End If
+    End Sub
+
 End Class

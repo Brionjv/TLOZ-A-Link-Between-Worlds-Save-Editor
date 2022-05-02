@@ -118,17 +118,209 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="icon_AdvH" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_AdvH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bg_menuitems_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_menuitems_on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_sandrod_unavailable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_sandrod_unavailable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_net_unavailable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_net_unavailable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_sandrod_nice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_sandrod_nice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close_red_tl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_red_tl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_tornadorod_rented" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_tornadorod_rented.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_scootfruit_unavailable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_scootfruit_unavailable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_hammer_rented" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_hammer_rented.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_firerod_unavailable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_firerod_unavailable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_tornadorod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_tornadorod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_bottles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_bottles.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_firerod_rented" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_firerod_rented.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_boomerang_nice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_boomerang_nice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bottle_redpotion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bottle_redpotion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_monstertail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_monstertail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_sandrod_rented" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_sandrod_rented.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_bombs_nice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_bombs_nice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bottle_bluepotion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bottle_bluepotion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_betwse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_betwse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bottle_milk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bottle_milk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_hookshot_unavailable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_hookshot_unavailable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_bow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_bowoflight_unavailable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_bowoflight_unavailable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_bow_rented" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_bow_rented.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_bow_nice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_bow_nice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minimize" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bottle_letter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bottle_letter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_sandrod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_sandrod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_hookshot_rented" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_hookshot_rented.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_heart_3x4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_heart_3x4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="close_tl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close_tl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icon_hintglasses" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_hintglasses.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_heart_2x4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_heart_2x4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_boomerang_unavailable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_boomerang_unavailable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_bottles_unavailable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_bottles_unavailable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_AdvH" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_AdvH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_hammer_nice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_hammer_nice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_hintglasses_unavailable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_hintglasses_unavailable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_icerod_unavailable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_icerod_unavailable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_bowoflight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_bowoflight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bottle_yellowpotion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bottle_yellowpotion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minimize_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimize_gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_net_nice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_net_nice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_lamp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_lamp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bottle_heart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bottle_heart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_firerod_nice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_firerod_nice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_monsterguts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_monsterguts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_firerod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_firerod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_tornadorod_unavailable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_tornadorod_unavailable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_lostmaiamai" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_lostmaiamai.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_bow_unavailable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_bow_unavailable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_boomerang_rented" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_boomerang_rented.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bottle_goldenbee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bottle_goldenbee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bottle_greenapple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bottle_greenapple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_foulfruit_unavailable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_foulfruit_unavailable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_unusword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_unusword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_hookshot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_hookshot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_lamp_nice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_lamp_nice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_heart_0x4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_heart_0x4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_monsterhorn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_monsterhorn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_boomerang" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_boomerang.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bottle_fairy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bottle_fairy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_hammer_unavailable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_hammer_unavailable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icon_foulfruit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_foulfruit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_heart_1x4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_heart_1x4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bottle_apple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bottle_apple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_hookshot_nice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_hookshot_nice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_scootfruit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_scootfruit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,91 +328,55 @@
   <data name="icon_heart_4x4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_heart_4x4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_hookshot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_hookshot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_icerod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_icerod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bg_betwse" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bg_betwse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="close_red_tl" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close_red_tl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_hintglasses" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_hintglasses.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_bottles" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_bottles.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="minimize" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minimize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bg_menuitems_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bg_menuitems_on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_tornadorod" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_tornadorod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_icerod_rented" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_icerod_rented.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bg_menuitems_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg_menuitems_off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_net" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_firerod" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_firerod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_bow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_heart_2x4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_heart_2x4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_heart_3x4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_heart_3x4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_boomerang" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_boomerang.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_lamp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_lamp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_bowoflight" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_bowoflight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="minimize_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minimize_gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bg_menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bg_menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_hammer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_hammer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_icerod" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_icerod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_sandrod" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_sandrod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_lamp_unavailable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_lamp_unavailable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_bombs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_bombs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_heart_0x4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_heart_0x4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_icerod_nice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_icerod_nice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_lostmaiamai" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_lostmaiamai.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bottle_empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bottle_empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_monsterguts" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_monsterguts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_bombs_rented" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_bombs_rented.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_monsterhorn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_monsterhorn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bottle_premiummilk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bottle_premiummilk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_monstertail" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_monstertail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_hammer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_hammer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_heart_1x4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_heart_1x4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bottle_bee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bottle_bee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_rupees" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_rupees.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_bombs_unavailable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_bombs_unavailable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bottle_purplepotion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bottle_purplepotion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_tornadorod_nice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_tornadorod_nice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_description" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_description.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

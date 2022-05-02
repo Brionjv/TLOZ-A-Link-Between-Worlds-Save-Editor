@@ -42,6 +42,76 @@ TLOZ-A-Link-Between-Worlds-Save-Editor
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.bottle_apple">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.bottle_bee">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.bottle_bluepotion">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.bottle_empty">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.bottle_fairy">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.bottle_goldenbee">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.bottle_greenapple">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.bottle_heart">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.bottle_letter">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.bottle_milk">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.bottle_premiummilk">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.bottle_purplepotion">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.bottle_redpotion">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.bottle_yellowpotion">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.close_red_tl">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -62,7 +132,37 @@ TLOZ-A-Link-Between-Worlds-Save-Editor
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_bombs_nice">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_bombs_rented">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_bombs_unavailable">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_boomerang">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_boomerang_nice">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_boomerang_rented">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_boomerang_unavailable">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
@@ -72,7 +172,27 @@ TLOZ-A-Link-Between-Worlds-Save-Editor
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_bottles_unavailable">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_bow">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_bow_nice">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_bow_rented">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_bow_unavailable">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
@@ -82,7 +202,32 @@ TLOZ-A-Link-Between-Worlds-Save-Editor
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_bowoflight_unavailable">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_description">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_firerod">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_firerod_nice">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_firerod_rented">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_firerod_unavailable">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
@@ -92,7 +237,27 @@ TLOZ-A-Link-Between-Worlds-Save-Editor
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_foulfruit_unavailable">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_hammer">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_hammer_nice">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_hammer_rented">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_hammer_unavailable">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
@@ -127,7 +292,27 @@ TLOZ-A-Link-Between-Worlds-Save-Editor
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_hintglasses_unavailable">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_hookshot">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_hookshot_nice">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_hookshot_rented">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_hookshot_unavailable">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
@@ -137,7 +322,32 @@ TLOZ-A-Link-Between-Worlds-Save-Editor
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_icerod_nice">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_icerod_rented">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_icerod_unavailable">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_lamp">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_lamp_nice">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_lamp_unavailable">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
@@ -167,6 +377,16 @@ TLOZ-A-Link-Between-Worlds-Save-Editor
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_net_nice">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_net_unavailable">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_rupees">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -177,12 +397,52 @@ TLOZ-A-Link-Between-Worlds-Save-Editor
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_sandrod_nice">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_sandrod_rented">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_sandrod_unavailable">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_scootfruit">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_scootfruit_unavailable">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_tornadorod">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_tornadorod_nice">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_tornadorod_rented">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_tornadorod_unavailable">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_unusword">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
