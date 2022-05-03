@@ -136,6 +136,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <None Include="Resources\title_ZALBWSE.png" />
+    <None Include="Resources\icon_description_inventory.png" />
     <None Include="Resources\icon_description.png" />
     <None Include="Resources\icon_unusword.png" />
     <None Include="Resources\icon_tornadorod_rented.png" />

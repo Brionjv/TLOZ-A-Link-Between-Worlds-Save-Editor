@@ -25,20 +25,6 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.TLSE_header = New System.Windows.Forms.Panel()
         Me.Panel_menubar = New System.Windows.Forms.Panel()
-        Me.Panel_bspesymb = New System.Windows.Forms.Panel()
-        Me.Icon_bspesymb = New System.Windows.Forms.PictureBox()
-        Me.Panel_Advhelp = New System.Windows.Forms.Panel()
-        Me.Icon_Advhelp = New System.Windows.Forms.PictureBox()
-        Me.Panel_chkupdate = New System.Windows.Forms.Panel()
-        Me.Icon_chkupdate = New System.Windows.Forms.PictureBox()
-        Me.Panel_filepath = New System.Windows.Forms.Panel()
-        Me.Icon_filepath = New System.Windows.Forms.PictureBox()
-        Me.Panel_hiddenthings = New System.Windows.Forms.Panel()
-        Me.Icon_hiddenthings = New System.Windows.Forms.PictureBox()
-        Me.Panel_bgmusic = New System.Windows.Forms.Panel()
-        Me.Icon_bgmusic = New System.Windows.Forms.PictureBox()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Filever_text = New System.Windows.Forms.Label()
         Me.Panel_menu_opensave = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Text_menu_save = New System.Windows.Forms.Label()
@@ -144,6 +130,7 @@ Partial Class Form1
         Me.Icon_currentheart_2 = New System.Windows.Forms.PictureBox()
         Me.Icon_currentheart_1 = New System.Windows.Forms.PictureBox()
         Me.Panel_inventory = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Icon_monstergust = New System.Windows.Forms.PictureBox()
         Me.Icon_monsterhorn = New System.Windows.Forms.PictureBox()
         Me.Icon_monstertail = New System.Windows.Forms.PictureBox()
@@ -239,21 +226,10 @@ Partial Class Form1
         Me.Icon_bow = New System.Windows.Forms.PictureBox()
         Me.Panel_description = New System.Windows.Forms.Panel()
         Me.Text_description = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Text_version = New System.Windows.Forms.Label()
         Me.TLSE_header.SuspendLayout()
         Me.Panel_menubar.SuspendLayout()
-        Me.Panel_bspesymb.SuspendLayout()
-        CType(Me.Icon_bspesymb, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_Advhelp.SuspendLayout()
-        CType(Me.Icon_Advhelp, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_chkupdate.SuspendLayout()
-        CType(Me.Icon_chkupdate, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_filepath.SuspendLayout()
-        CType(Me.Icon_filepath, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_hiddenthings.SuspendLayout()
-        CType(Me.Icon_hiddenthings, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_bgmusic.SuspendLayout()
-        CType(Me.Icon_bgmusic, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
         Me.Panel_menu_opensave.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Minimizebutton, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -331,6 +307,7 @@ Partial Class Form1
         CType(Me.Icon_currentheart_2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_currentheart_1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_inventory.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_monstergust, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_monsterhorn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_monstertail, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -445,176 +422,13 @@ Partial Class Form1
         '
         Me.Panel_menubar.BackColor = System.Drawing.Color.Transparent
         Me.Panel_menubar.BackgroundImage = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.bg_menu
-        Me.Panel_menubar.Controls.Add(Me.Panel_bspesymb)
-        Me.Panel_menubar.Controls.Add(Me.Panel_Advhelp)
-        Me.Panel_menubar.Controls.Add(Me.Panel_chkupdate)
-        Me.Panel_menubar.Controls.Add(Me.Panel_filepath)
-        Me.Panel_menubar.Controls.Add(Me.Panel_hiddenthings)
-        Me.Panel_menubar.Controls.Add(Me.Panel_bgmusic)
-        Me.Panel_menubar.Controls.Add(Me.Panel1)
+        Me.Panel_menubar.Controls.Add(Me.Label2)
         Me.Panel_menubar.Controls.Add(Me.Panel_menu_opensave)
         Me.Panel_menubar.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Panel_menubar.Location = New System.Drawing.Point(0, 41)
         Me.Panel_menubar.Name = "Panel_menubar"
         Me.Panel_menubar.Size = New System.Drawing.Size(680, 34)
         Me.Panel_menubar.TabIndex = 5
-        '
-        'Panel_bspesymb
-        '
-        Me.Panel_bspesymb.Controls.Add(Me.Icon_bspesymb)
-        Me.Panel_bspesymb.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Panel_bspesymb.Location = New System.Drawing.Point(395, 0)
-        Me.Panel_bspesymb.Name = "Panel_bspesymb"
-        Me.Panel_bspesymb.Size = New System.Drawing.Size(34, 34)
-        Me.Panel_bspesymb.TabIndex = 7
-        Me.Panel_bspesymb.Visible = False
-        '
-        'Icon_bspesymb
-        '
-        Me.Icon_bspesymb.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_bspesymb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Icon_bspesymb.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Icon_bspesymb.Enabled = False
-        Me.Icon_bspesymb.Location = New System.Drawing.Point(0, 0)
-        Me.Icon_bspesymb.Name = "Icon_bspesymb"
-        Me.Icon_bspesymb.Size = New System.Drawing.Size(34, 34)
-        Me.Icon_bspesymb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.Icon_bspesymb.TabIndex = 2
-        Me.Icon_bspesymb.TabStop = False
-        '
-        'Panel_Advhelp
-        '
-        Me.Panel_Advhelp.Controls.Add(Me.Icon_Advhelp)
-        Me.Panel_Advhelp.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Panel_Advhelp.Location = New System.Drawing.Point(358, 0)
-        Me.Panel_Advhelp.Name = "Panel_Advhelp"
-        Me.Panel_Advhelp.Size = New System.Drawing.Size(34, 34)
-        Me.Panel_Advhelp.TabIndex = 6
-        Me.Panel_Advhelp.Visible = False
-        '
-        'Icon_Advhelp
-        '
-        Me.Icon_Advhelp.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_Advhelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Icon_Advhelp.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Icon_Advhelp.Enabled = False
-        Me.Icon_Advhelp.Location = New System.Drawing.Point(0, 0)
-        Me.Icon_Advhelp.Name = "Icon_Advhelp"
-        Me.Icon_Advhelp.Size = New System.Drawing.Size(34, 34)
-        Me.Icon_Advhelp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.Icon_Advhelp.TabIndex = 2
-        Me.Icon_Advhelp.TabStop = False
-        '
-        'Panel_chkupdate
-        '
-        Me.Panel_chkupdate.Controls.Add(Me.Icon_chkupdate)
-        Me.Panel_chkupdate.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Panel_chkupdate.Location = New System.Drawing.Point(321, 0)
-        Me.Panel_chkupdate.Name = "Panel_chkupdate"
-        Me.Panel_chkupdate.Size = New System.Drawing.Size(34, 34)
-        Me.Panel_chkupdate.TabIndex = 5
-        Me.Panel_chkupdate.Visible = False
-        '
-        'Icon_chkupdate
-        '
-        Me.Icon_chkupdate.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_chkupdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Icon_chkupdate.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Icon_chkupdate.Enabled = False
-        Me.Icon_chkupdate.Location = New System.Drawing.Point(0, 0)
-        Me.Icon_chkupdate.Name = "Icon_chkupdate"
-        Me.Icon_chkupdate.Size = New System.Drawing.Size(34, 34)
-        Me.Icon_chkupdate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.Icon_chkupdate.TabIndex = 2
-        Me.Icon_chkupdate.TabStop = False
-        '
-        'Panel_filepath
-        '
-        Me.Panel_filepath.Controls.Add(Me.Icon_filepath)
-        Me.Panel_filepath.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel_filepath.Location = New System.Drawing.Point(284, 0)
-        Me.Panel_filepath.Name = "Panel_filepath"
-        Me.Panel_filepath.Size = New System.Drawing.Size(34, 34)
-        Me.Panel_filepath.TabIndex = 4
-        Me.Panel_filepath.Visible = False
-        '
-        'Icon_filepath
-        '
-        Me.Icon_filepath.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_filepath.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Icon_filepath.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Icon_filepath.Enabled = False
-        Me.Icon_filepath.Location = New System.Drawing.Point(0, 0)
-        Me.Icon_filepath.Name = "Icon_filepath"
-        Me.Icon_filepath.Size = New System.Drawing.Size(34, 34)
-        Me.Icon_filepath.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.Icon_filepath.TabIndex = 2
-        Me.Icon_filepath.TabStop = False
-        '
-        'Panel_hiddenthings
-        '
-        Me.Panel_hiddenthings.Controls.Add(Me.Icon_hiddenthings)
-        Me.Panel_hiddenthings.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Panel_hiddenthings.Location = New System.Drawing.Point(247, 0)
-        Me.Panel_hiddenthings.Name = "Panel_hiddenthings"
-        Me.Panel_hiddenthings.Size = New System.Drawing.Size(34, 34)
-        Me.Panel_hiddenthings.TabIndex = 3
-        Me.Panel_hiddenthings.Visible = False
-        '
-        'Icon_hiddenthings
-        '
-        Me.Icon_hiddenthings.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_hiddenthings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Icon_hiddenthings.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Icon_hiddenthings.Enabled = False
-        Me.Icon_hiddenthings.Location = New System.Drawing.Point(0, 0)
-        Me.Icon_hiddenthings.Name = "Icon_hiddenthings"
-        Me.Icon_hiddenthings.Size = New System.Drawing.Size(34, 34)
-        Me.Icon_hiddenthings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.Icon_hiddenthings.TabIndex = 2
-        Me.Icon_hiddenthings.TabStop = False
-        '
-        'Panel_bgmusic
-        '
-        Me.Panel_bgmusic.Controls.Add(Me.Icon_bgmusic)
-        Me.Panel_bgmusic.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Panel_bgmusic.Location = New System.Drawing.Point(210, 0)
-        Me.Panel_bgmusic.Name = "Panel_bgmusic"
-        Me.Panel_bgmusic.Size = New System.Drawing.Size(34, 34)
-        Me.Panel_bgmusic.TabIndex = 2
-        Me.Panel_bgmusic.Visible = False
-        '
-        'Icon_bgmusic
-        '
-        Me.Icon_bgmusic.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_bgmusic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Icon_bgmusic.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Icon_bgmusic.Enabled = False
-        Me.Icon_bgmusic.Location = New System.Drawing.Point(0, 0)
-        Me.Icon_bgmusic.Name = "Icon_bgmusic"
-        Me.Icon_bgmusic.Size = New System.Drawing.Size(34, 34)
-        Me.Icon_bgmusic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.Icon_bgmusic.TabIndex = 2
-        Me.Icon_bgmusic.TabStop = False
-        '
-        'Panel1
-        '
-        Me.Panel1.Controls.Add(Me.Filever_text)
-        Me.Panel1.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Panel1.Location = New System.Drawing.Point(72, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(135, 34)
-        Me.Panel1.TabIndex = 1
-        '
-        'Filever_text
-        '
-        Me.Filever_text.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Filever_text.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Filever_text.Location = New System.Drawing.Point(101, 0)
-        Me.Filever_text.Name = "Filever_text"
-        Me.Filever_text.Size = New System.Drawing.Size(34, 34)
-        Me.Filever_text.TabIndex = 1
-        Me.Filever_text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel_menu_opensave
         '
@@ -689,6 +503,7 @@ Partial Class Form1
         '
         'TLSE_title
         '
+        Me.TLSE_title.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.title_ZALBWSE
         Me.TLSE_title.Location = New System.Drawing.Point(76, 8)
         Me.TLSE_title.Name = "TLSE_title"
         Me.TLSE_title.Size = New System.Drawing.Size(443, 22)
@@ -1804,6 +1619,7 @@ Partial Class Form1
         Me.Panel_inventory.BackColor = System.Drawing.Color.Transparent
         Me.Panel_inventory.BackgroundImage = CType(resources.GetObject("Panel_inventory.BackgroundImage"), System.Drawing.Image)
         Me.Panel_inventory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel_inventory.Controls.Add(Me.PictureBox2)
         Me.Panel_inventory.Controls.Add(Me.Icon_monstergust)
         Me.Panel_inventory.Controls.Add(Me.Icon_monsterhorn)
         Me.Panel_inventory.Controls.Add(Me.Icon_monstertail)
@@ -1907,6 +1723,16 @@ Partial Class Form1
         Me.Panel_inventory.Size = New System.Drawing.Size(676, 540)
         Me.Panel_inventory.TabIndex = 319
         Me.Panel_inventory.Visible = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_description_inventory
+        Me.PictureBox2.Location = New System.Drawing.Point(47, 262)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(80, 80)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox2.TabIndex = 416
+        Me.PictureBox2.TabStop = False
         '
         'Icon_monstergust
         '
@@ -2462,6 +2288,7 @@ Partial Class Form1
         Me.valu_net.Size = New System.Drawing.Size(48, 16)
         Me.valu_net.TabIndex = 354
         Me.valu_net.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_net.Visible = False
         '
         'Icon_net
         '
@@ -2482,6 +2309,7 @@ Partial Class Form1
         Me.valu_lamp.Size = New System.Drawing.Size(48, 16)
         Me.valu_lamp.TabIndex = 352
         Me.valu_lamp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_lamp.Visible = False
         '
         'Icon_lamp
         '
@@ -2502,6 +2330,7 @@ Partial Class Form1
         Me.valu_boomerang.Size = New System.Drawing.Size(48, 16)
         Me.valu_boomerang.TabIndex = 350
         Me.valu_boomerang.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_boomerang.Visible = False
         '
         'Icon_boomerang
         '
@@ -2522,6 +2351,7 @@ Partial Class Form1
         Me.valu_bombs.Size = New System.Drawing.Size(48, 16)
         Me.valu_bombs.TabIndex = 348
         Me.valu_bombs.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_bombs.Visible = False
         '
         'Icon_bombs
         '
@@ -2542,6 +2372,7 @@ Partial Class Form1
         Me.valu_bottle5.Size = New System.Drawing.Size(48, 16)
         Me.valu_bottle5.TabIndex = 346
         Me.valu_bottle5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_bottle5.Visible = False
         '
         'Icon_bottle5
         '
@@ -2563,6 +2394,7 @@ Partial Class Form1
         Me.valu_bottle4.Size = New System.Drawing.Size(48, 16)
         Me.valu_bottle4.TabIndex = 344
         Me.valu_bottle4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_bottle4.Visible = False
         '
         'Icon_bottle4
         '
@@ -2583,6 +2415,7 @@ Partial Class Form1
         Me.valu_bottle3.Size = New System.Drawing.Size(48, 16)
         Me.valu_bottle3.TabIndex = 342
         Me.valu_bottle3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_bottle3.Visible = False
         '
         'Icon_bottle3
         '
@@ -2603,6 +2436,7 @@ Partial Class Form1
         Me.valu_bottle2.Size = New System.Drawing.Size(48, 16)
         Me.valu_bottle2.TabIndex = 340
         Me.valu_bottle2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_bottle2.Visible = False
         '
         'Icon_bottle2
         '
@@ -2623,6 +2457,7 @@ Partial Class Form1
         Me.valu_bottle1.Size = New System.Drawing.Size(48, 16)
         Me.valu_bottle1.TabIndex = 338
         Me.valu_bottle1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_bottle1.Visible = False
         '
         'Icon_bottle1
         '
@@ -2643,6 +2478,7 @@ Partial Class Form1
         Me.valu_foulfruit.Size = New System.Drawing.Size(48, 16)
         Me.valu_foulfruit.TabIndex = 336
         Me.valu_foulfruit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_foulfruit.Visible = False
         '
         'Icon_foulfruit
         '
@@ -2663,6 +2499,7 @@ Partial Class Form1
         Me.valu_scootfruit.Size = New System.Drawing.Size(48, 16)
         Me.valu_scootfruit.TabIndex = 334
         Me.valu_scootfruit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_scootfruit.Visible = False
         '
         'Icon_scootfruit
         '
@@ -2683,6 +2520,7 @@ Partial Class Form1
         Me.valu_hintglasses.Size = New System.Drawing.Size(48, 16)
         Me.valu_hintglasses.TabIndex = 332
         Me.valu_hintglasses.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_hintglasses.Visible = False
         '
         'Icon_hintglasses
         '
@@ -2703,6 +2541,7 @@ Partial Class Form1
         Me.valu_hookshot.Size = New System.Drawing.Size(48, 16)
         Me.valu_hookshot.TabIndex = 330
         Me.valu_hookshot.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_hookshot.Visible = False
         '
         'Icon_hookshot
         '
@@ -2724,6 +2563,7 @@ Partial Class Form1
         Me.valu_tornadorod.Size = New System.Drawing.Size(48, 16)
         Me.valu_tornadorod.TabIndex = 328
         Me.valu_tornadorod.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_tornadorod.Visible = False
         '
         'Icon_tornadorod
         '
@@ -2744,6 +2584,7 @@ Partial Class Form1
         Me.valu_icerod.Size = New System.Drawing.Size(48, 16)
         Me.valu_icerod.TabIndex = 326
         Me.valu_icerod.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_icerod.Visible = False
         '
         'Icon_icerod
         '
@@ -2764,6 +2605,7 @@ Partial Class Form1
         Me.valu_firerod.Size = New System.Drawing.Size(48, 16)
         Me.valu_firerod.TabIndex = 324
         Me.valu_firerod.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_firerod.Visible = False
         '
         'Icon_firerod
         '
@@ -2784,6 +2626,7 @@ Partial Class Form1
         Me.valu_sandrod.Size = New System.Drawing.Size(48, 16)
         Me.valu_sandrod.TabIndex = 322
         Me.valu_sandrod.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sandrod.Visible = False
         '
         'Icon_sandrod
         '
@@ -2804,6 +2647,7 @@ Partial Class Form1
         Me.valu_hammer.Size = New System.Drawing.Size(48, 16)
         Me.valu_hammer.TabIndex = 320
         Me.valu_hammer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_hammer.Visible = False
         '
         'Icon_hammer
         '
@@ -2824,6 +2668,7 @@ Partial Class Form1
         Me.valu_bowoflight.Size = New System.Drawing.Size(48, 16)
         Me.valu_bowoflight.TabIndex = 318
         Me.valu_bowoflight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_bowoflight.Visible = False
         '
         'Icon_bowoflight
         '
@@ -2844,6 +2689,7 @@ Partial Class Form1
         Me.valu_bow.Size = New System.Drawing.Size(48, 16)
         Me.valu_bow.TabIndex = 316
         Me.valu_bow.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_bow.Visible = False
         '
         'Icon_bow
         '
@@ -2863,6 +2709,7 @@ Partial Class Form1
         Me.Panel_description.Name = "Panel_description"
         Me.Panel_description.Size = New System.Drawing.Size(680, 32)
         Me.Panel_description.TabIndex = 320
+        Me.Panel_description.Visible = False
         '
         'Text_description
         '
@@ -2874,6 +2721,29 @@ Partial Class Form1
         Me.Text_description.Size = New System.Drawing.Size(680, 32)
         Me.Text_description.TabIndex = 341
         Me.Text_description.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label2
+        '
+        Me.Label2.ForeColor = System.Drawing.Color.Red
+        Me.Label2.Location = New System.Drawing.Point(70, 1)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(607, 34)
+        Me.Label2.TabIndex = 8
+        Me.Label2.Text = "When you have restore your save file : If you don't have any save file slot" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Relo" &
+    "ad your save file here and click on save button without do any changes. Restore " &
+    "another time"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Text_version
+        '
+        Me.Text_version.BackColor = System.Drawing.Color.Transparent
+        Me.Text_version.ForeColor = System.Drawing.Color.White
+        Me.Text_version.Location = New System.Drawing.Point(713, 628)
+        Me.Text_version.Name = "Text_version"
+        Me.Text_version.Size = New System.Drawing.Size(116, 21)
+        Me.Text_version.TabIndex = 321
+        Me.Text_version.Text = "Version 1.0.0"
+        Me.Text_version.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'Form1
         '
@@ -2889,6 +2759,7 @@ Partial Class Form1
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.Panel_inventory)
         Me.Controls.Add(Me.Panel_linkstatus)
+        Me.Controls.Add(Me.Text_version)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -2897,19 +2768,6 @@ Partial Class Form1
         Me.Text = "Form1"
         Me.TLSE_header.ResumeLayout(False)
         Me.Panel_menubar.ResumeLayout(False)
-        Me.Panel_bspesymb.ResumeLayout(False)
-        CType(Me.Icon_bspesymb, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_Advhelp.ResumeLayout(False)
-        CType(Me.Icon_Advhelp, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_chkupdate.ResumeLayout(False)
-        CType(Me.Icon_chkupdate, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_filepath.ResumeLayout(False)
-        CType(Me.Icon_filepath, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_hiddenthings.ResumeLayout(False)
-        CType(Me.Icon_hiddenthings, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_bgmusic.ResumeLayout(False)
-        CType(Me.Icon_bgmusic, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
         Me.Panel_menu_opensave.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Minimizebutton, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2989,6 +2847,8 @@ Partial Class Form1
         CType(Me.Icon_currentheart_2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_currentheart_1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_inventory.ResumeLayout(False)
+        Me.Panel_inventory.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_monstergust, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_monsterhorn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_monstertail, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3120,20 +2980,6 @@ Partial Class Form1
     Friend WithEvents PictureBox40 As PictureBox
     Friend WithEvents TLSE_header As Panel
     Friend WithEvents Panel_menubar As Panel
-    Friend WithEvents Panel_bspesymb As Panel
-    Friend WithEvents Icon_bspesymb As PictureBox
-    Friend WithEvents Panel_Advhelp As Panel
-    Friend WithEvents Icon_Advhelp As PictureBox
-    Friend WithEvents Panel_chkupdate As Panel
-    Friend WithEvents Icon_chkupdate As PictureBox
-    Friend WithEvents Panel_filepath As Panel
-    Friend WithEvents Icon_filepath As PictureBox
-    Friend WithEvents Panel_hiddenthings As Panel
-    Friend WithEvents Icon_hiddenthings As PictureBox
-    Friend WithEvents Panel_bgmusic As Panel
-    Friend WithEvents Icon_bgmusic As PictureBox
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Filever_text As Label
     Friend WithEvents Panel_menu_opensave As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Text_menu_save As Label
@@ -3303,4 +3149,7 @@ Partial Class Form1
     Friend WithEvents valu_sector As NumericUpDown
     Friend WithEvents Panel_description As Panel
     Friend WithEvents Text_description As Label
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Text_version As Label
 End Class

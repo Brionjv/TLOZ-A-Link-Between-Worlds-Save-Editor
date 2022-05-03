@@ -212,6 +212,11 @@ TLOZ-A-Link-Between-Worlds-Save-Editor
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_description_inventory">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.icon_firerod">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -453,6 +458,11 @@ TLOZ-A-Link-Between-Worlds-Save-Editor
 </summary>
 </member>
 <member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.minimize_gray">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TLOZ_A_Link_Between_Worlds_Save_Editor.My.Resources.Resources.title_ZALBWSE">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>

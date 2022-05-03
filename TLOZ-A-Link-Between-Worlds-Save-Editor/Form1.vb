@@ -4849,4 +4849,57 @@ Public Class Form1
         End If
     End Sub
 
+    Private Sub Panel_description_VisibleChanged(sender As Object, e As EventArgs) Handles Panel_description.VisibleChanged
+        If Panel_description.Visible = True Then
+            Icon_description.Visible = True
+        End If
+        If Panel_description.Visible = False Then
+            Icon_description.Visible = False
+        End If
+    End Sub
+
+    Private Sub Icon_rupee_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_rupee.MouseMove
+        Text_description.Text = "Click to set rupee as maximum"
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_rupee_MouseLeave(sender As Object, e As EventArgs) Handles Icon_rupee.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_lostmaiamai_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_lostmaiamai.MouseMove
+        Text_description.Text = "Click to set lost maiamai as maximum"
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_lostmaiamai_MouseLeave(sender As Object, e As EventArgs) Handles Icon_lostmaiamai.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_monstertail_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_monstertail.MouseMove
+        Text_description.Text = "Click to set monster tail as maximum"
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_monstertail_MouseLeave(sender As Object, e As EventArgs) Handles Icon_monstertail.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_monsterhorn_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_monsterhorn.MouseMove
+        Text_description.Text = "Click to set monster horn as maximum"
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_monsterhorn_MouseLeave(sender As Object, e As EventArgs) Handles Icon_monsterhorn.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_monstergust_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_monstergust.MouseMove
+        Text_description.Text = "Click to set monster gust as maximum"
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_monstergust_MouseLeave(sender As Object, e As EventArgs) Handles Icon_monstergust.MouseLeave
+        Panel_description.Visible = False
+    End Sub
 End Class

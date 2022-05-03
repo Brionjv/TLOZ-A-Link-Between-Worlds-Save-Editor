@@ -24,5 +24,4 @@ D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Li
 D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\obj\Release\TLOZ-A-Link-Between-Worlds-Save-Editor.exe
 D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\obj\Release\TLOZ-A-Link-Between-Worlds-Save-Editor.xml
 D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\obj\Release\TLOZ-A-Link-Between-Worlds-Save-Editor.pdb
-D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\obj\Release\TLOZ-A-Link-Between-Worlds-Save-Editor.vbproj.AssemblyReference.cache
 D:\Users\brice\Documents\Github\TLOZ-A-Link-Between-Worlds-Save-Editor\TLOZ-A-Link-Between-Worlds-Save-Editor\obj\Release\TLOZ_A_Link_Between_Worlds_Save_Editor.ZBWSE_dialog.resources
